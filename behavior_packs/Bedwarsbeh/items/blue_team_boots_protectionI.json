@@ -7,7 +7,7 @@
 		},
 		"components": {
 			"minecraft:foil": true,
-			// Boots category
+			// Boots category 
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.boots"
 			},
