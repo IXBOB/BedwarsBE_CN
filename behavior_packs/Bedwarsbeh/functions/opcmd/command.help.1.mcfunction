@@ -1,1 +1,1 @@
-tellraw @s[tag=op] { "rawtext" : [ { "text" : "§a§l显示指令帮助第 1/2 页\n输入 /function opcmd/command.help.<数字> 前往指定页面\n§r§f/tag <玩家> add op\n/tag <玩家> remove op\n/function opcmd/set.start.players.<数字>"} ] }
+tellraw @s[tag=op] { "rawtext" : [ { "text" : "§2显示指令帮助第 2/2 页\n- /function opcmd/command.help.<数字> - 前往指定页面\n§r- /tag <玩家> add op\n- §7使<玩家>获得管理员权限\n§r- /tag <玩家> remove op\n§7- 夺取<玩家>的管理员权限\n§r- /function opcmd/set.start.players.<数字>\n§7- 将开始游戏的最小人数修改为<数字>"} ] }
