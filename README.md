@@ -1,2 +1,3 @@
 # BedwarsBE_CN
-BedwarsBE中国版仓库，作者IXBOB，已入驻爱发电
+我的世界基岩版起床战争中国版,作者IXBOB
+GITHUB: https://github.com/IXBOB/BedwarsBE_CN
