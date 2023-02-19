@@ -10,7 +10,7 @@
 				"texture": "barrier"
 			},
 			"minecraft:display_name": {
-				"value": "§c无\n§a[已选择]"
+				"value": "§c§l无\n§a[已选择]"
 			},
 			"minecraft:max_stack_size": 64
 		}

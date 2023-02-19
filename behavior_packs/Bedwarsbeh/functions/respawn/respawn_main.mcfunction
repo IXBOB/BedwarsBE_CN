@@ -9,13 +9,13 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 #重生时间title
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={respawning=1}] ~~~ title @s times 0 40 10
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=80,respawning=1}] ~~~ title @s title §c你死了
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=80,respawning=1}] ~~~ title @s subtitle §e你将在 §c4 §e秒后重生
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=80,respawning=1}] ~~~ title @s subtitle §e您将在 §c4 §e秒后重生
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=60,respawning=1}] ~~~ title @s title §c你死了
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=60,respawning=1}] ~~~ title @s subtitle §e你将在 §c3 §e秒后重生
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=60,respawning=1}] ~~~ title @s subtitle §e您将在 §c3 §e秒后重生
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=40,respawning=1}] ~~~ title @s title §c你死了
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=40,respawning=1}] ~~~ title @s subtitle §e你将在 §c2 §e秒后重生
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=40,respawning=1}] ~~~ title @s subtitle §e您将在 §c2 §e秒后重生
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ title @s title §c你死了
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ title @s subtitle §e你将在 §c1 §e秒后重生
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ title @s subtitle §e您将在 §c1 §e秒后重生
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=0,respawning=1}] ~~~ title @s title §a已重生
 
 #重生时删除in_void_kill

@@ -9,7 +9,7 @@
 				"texture": "experience_bottle"
 			},
 			"minecraft:display_name": {
-				"value": "§a绿色星星\n§c[需要达到 起床战争等级 5]"
+				"value": "§a§l绿色星星\n§c[需要达到 起床战争等级 5]"
 			},
 			"minecraft:max_stack_size": 64
 		}

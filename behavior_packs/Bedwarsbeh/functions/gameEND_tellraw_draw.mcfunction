@@ -1,6 +1,6 @@
 tellraw @a { "rawtext" : [ { "text" : "§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀" } ] }
-tellraw @a { "rawtext" : [ { "text" : "§l                    起床战争       \n                  §r§f平局\n" } ] }
-execute @e[type=armor_stand,name=main] ~~~ tellraw @a { "rawtext" : [ { "text" : "        没有玩家获胜 " },{ "text" : "\n\n§r§f                 游戏时间: §7" },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n "} ] }
+tellraw @a { "rawtext" : [ { "text" : "§l                    起床战争       \n                      §r§7平局\n" } ] }
+execute @e[type=armor_stand,name=main] ~~~ tellraw @a { "rawtext" : [ { "text" : "                    §7没有玩家获胜 " },{ "text" : "\n\n§r§f                 游戏时间: §7" },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n "} ] }
 scoreboard players set @e[type=armor_stand,name=main] kill.highest 0
 scoreboard players reset * kill.cache
 tag @e remove kill.FIRST
