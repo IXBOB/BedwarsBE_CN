@@ -184,31 +184,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1,"游戏模式"=2}] ~~~ 
 execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=1}] ~~~ clone 288 4 294 288 4 294 -202 200 -197
 execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=2}] ~~~ clone 288 5 294 288 5 294 -202 200 -197
 #检测人数开始游戏相关================
-#当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
-#此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-#删除非tag=op玩家的tag
-execute @a[tag=!op,tag=set.start.players.2] ~~~ tag @s remove set.start.players.2
-execute @a[tag=!op,tag=set.start.players.3] ~~~ tag @s remove set.start.players.3
-execute @a[tag=!op,tag=set.start.players.4] ~~~ tag @s remove set.start.players.4
-execute @a[tag=!op,tag=set.start.players.5] ~~~ tag @s remove set.start.players.5
-execute @a[tag=!op,tag=set.start.players.6] ~~~ tag @s remove set.start.players.6
-execute @a[tag=!op,tag=set.start.players.7] ~~~ tag @s remove set.start.players.7
-execute @a[tag=!op,tag=set.start.players.8] ~~~ tag @s remove set.start.players.8
-#非gameSTART=0时删除玩家的tag
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.2
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.3
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.4
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.5
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.6
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.7
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.8
 #初始化重复检测大厅人数
 scoreboard players reset * "大厅人数"
 #检测人数开始游戏相关结束================
@@ -222,13 +197,6 @@ execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s add get.op.tellrawed
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cYour administrator privileges have been taken away" } ] }
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s remove get.op.tellrawed
-#command.help
-execute @a[tag=!op,tag=command.help] ~~~ tag @s remove command.help
-execute @a[tag=!op,tag=command.help.1] ~~~ tag @s remove command.help.1
-execute @a[tag=!op,tag=command.help.2] ~~~ tag @s remove command.help.2
-execute @a[tag=op,tag=command.help] ~~~ function commands/command.help
-execute @a[tag=op,tag=command.help.1] ~~~ function commands/command.help.1
-execute @a[tag=op,tag=command.help.2] ~~~ function commands/command.help.2
 #玩家tag指令相关结束================
 #防止地图关键区域被破坏
 execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ function prevent_break_map_important_area

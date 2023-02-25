@@ -1,0 +1,1 @@
+tellraw @s[tag=op] { "rawtext" : [ { "text" : "§2显示指令帮助第 2/2 页\n- /function opcmd/command.help.<数字> - 前往指定页面\n§r更多命令正在开发..."} ] }
