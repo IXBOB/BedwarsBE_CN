@@ -216,10 +216,10 @@ scoreboard players reset * "大厅人数"
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..20,function_tick=20},tag=reset_OK] ~~~ function startgame_timer
 #玩家tag指令相关================
 #玩家获取或被夺去tag=op时提示
-execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§aYou have obtained OP permission. For help, enter /tag @s add command.help" } ] }
+execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§a您已成功取得管理员权限， 输入 /tag @s add command.help 获取快捷指令帮助" } ] }
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s add get.op.tellrawed
-execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cYour administrator privileges have been taken away" } ] }
+execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c您的管理员权限已被夺去" } ] }
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s remove get.op.tellrawed
 #command.help
@@ -383,7 +383,7 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=remove_sta
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=add_start_players_required] ~~~ function inventory_menu/menu3-change_start_players_required/add_players
 
 #非tag op玩家进入管理员菜单自动返回
-execute @a[tag=!insider,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
+execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
 
 #refresh_menu1
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1},tag=refresh_menu1] ~~~ function inventory_menu/refresh_menu/refresh_menu1
