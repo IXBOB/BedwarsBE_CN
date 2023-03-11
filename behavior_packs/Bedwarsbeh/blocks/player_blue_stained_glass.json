@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:red_stained_glass2"
+			"identifier": "bedwars:player_blue_stained_glass"
 		},
 		"components": {
 			"minecraft:destroy_time": 0.25,
@@ -10,7 +10,7 @@
 			"minecraft:material_instances": {
 				"*": {
 					"render_method": "blend",
-					"texture": "red_stained_glass2"
+					"texture": "player_blue_stained_glass"
 				}
 			},
 			"minecraft:on_placed": {
