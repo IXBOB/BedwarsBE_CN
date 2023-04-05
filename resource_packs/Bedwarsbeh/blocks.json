@@ -553,7 +553,7 @@
 	"bedwars:map_grass_block": {
 		"textures":{
 			"up":"map_grass_block_top",
-			"down":"map_grass_block_bottom",
+			"down":"map_grass_block_buttom",
 			"north":"map_grass_block_side",
 			"south":"map_grass_block_side",
 			"west":"map_grass_block_side",
@@ -684,6 +684,18 @@
 			"west":"map_white_wool_block",
 			"east":"map_white_wool_block"
 		},
+		"sound": "stone"
+	},	"bedwars:red_bed_foot": {
+		"textures": "red_bed_foot",
+		"sound": "stone"
+	},	"bedwars:red_bed_head": {
+		"textures": "red_bed_head",
+		"sound": "stone"
+	},	"bedwars:blue_bed_foot": {
+		"textures": "blue_bed_foot",
+		"sound": "stone"
+	},	"bedwars:blue_bed_head": {
+		"textures": "blue_bed_head",
 		"sound": "stone"
 	}
 }

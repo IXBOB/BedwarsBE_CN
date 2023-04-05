@@ -21,8 +21,6 @@ execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63
 execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ effect @s instant_health 1 255 true
 execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §b§l无敌时间已结束！" } ] }
 execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
-
-
 #检测装备升级
 execute @e[type=player,scores={"分队"=1..2},tag=up_sword] ~~~ function weapon_upgrade
 execute @e[type=player,scores={"分队"=1..2},tag=up_pickaxe] ~~~ function weapon_upgrade

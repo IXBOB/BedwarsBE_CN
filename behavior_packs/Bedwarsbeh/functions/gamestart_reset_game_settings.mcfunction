@@ -180,8 +180,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 #生成game_uid并赋予玩家
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players random @s game_uid 0 999999999
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players operation @a[scores={"分队"=1..2}] game_uid = @s game_uid
-#设置重生时间100
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a "重生时间" 100
 #中国版特供（游戏显示计分板逻辑）
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ setblock 305 4 300 redstone_block
 #starting -> 0
