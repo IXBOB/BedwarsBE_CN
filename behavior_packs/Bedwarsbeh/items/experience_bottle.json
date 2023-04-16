@@ -26,9 +26,9 @@
           "command":[
             "tag @s[scores={\"分队\"=1..2,\"存活\"=1}] add get_bottle_xp",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove get_bottle_xp",
-            "execute @s[tag=get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [ { \"text\" : \"§f§l经验存储瓶 >> §6您使用了经验存储瓶并从中获得了 100 经验\" } ] }",
+            "execute @s[tag=get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [ { \"text\" : \"§f§lXP bottle >> §6You used an XP bottle and got 100 levels\" } ] }",
             "execute @s[tag=get_bottle_xp] ~~~ xp 100L @s",
-            "execute @s[tag=!get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [ { \"text\" : \"§c经验存储瓶 >> 对局不在进行， 无法使用此物品\" } ] }",
+            "execute @s[tag=!get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [ { \"text\" : \"§cYou don't have permission to do this.\" } ] }",
             "tag @s remove get_bottle_xp",
             "clear @s bedwars:xp_bottle 0 1"
             ]

@@ -30,7 +30,7 @@
 				"texture": "iron_sword"
 			},
 			"minecraft:display_name": {
-				"value": "铁剑\n§7锋利 III\n\n§9+9 攻击伤害"
+				"value": "Iron Sword\n§7Sharpness III\n\n§9+9 Attack Damage"
 			}
 		}
 	}

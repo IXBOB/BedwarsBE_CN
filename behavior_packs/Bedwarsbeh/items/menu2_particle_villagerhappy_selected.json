@@ -10,7 +10,7 @@
 				"texture": "experience_bottle"
 			},
 			"minecraft:display_name": {
-				"value": "§a§l绿色星星\n§a[已选择]"
+				"value": "§aGreen star\n§a[selected]"
 			},
 			"minecraft:max_stack_size": 64
 		}

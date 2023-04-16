@@ -3,7 +3,7 @@
     "header": {
         "description": "Bedwars behavior pack by IXBOB",
         "name": "Bedwars behavior pack by IXBOB",
-        "uuid": "3f6b3a65-56df-4249-a4df-44b764a3c58c",
+        "uuid": "ca9b9d57-e577-4d39-9601-b864e7763b21",
         "version": [0, 0, 6],
         "min_engine_version": [ 1, 14, 0 ]
     },
@@ -11,7 +11,7 @@
         {
             "description": "Bedwars behavior pack by IXBOB",
             "type": "resources",
-            "uuid": "4ab61716-07f6-4e2d-abdf-056e3c815c32",
+            "uuid": "fb56f85b-d056-422d-9300-0002c4ad415b",
             "version": [0, 0, 6]
         }
     ]

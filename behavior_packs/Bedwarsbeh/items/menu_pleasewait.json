@@ -9,7 +9,7 @@
 				"texture": "gunpowder"
 			},
 			"minecraft:display_name": {
-				"value": "§7§o请稍候..."
+				"value": "§7§oPlease wait..."
 			},
 			"minecraft:max_stack_size": 64
 		}

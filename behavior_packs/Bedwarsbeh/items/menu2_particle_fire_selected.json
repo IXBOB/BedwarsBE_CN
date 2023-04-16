@@ -10,7 +10,7 @@
 				"texture": "fireball"
 			},
 			"minecraft:display_name": {
-				"value": "§6§l火焰\n§a[已选择]"
+				"value": "§6Fire\n§a[selected]"
 			},
 			"minecraft:max_stack_size": 64
 		}
