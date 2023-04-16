@@ -17,7 +17,7 @@
 			},
 			// We give it a name
 			"minecraft:display_name": {
-				"value": "Blue leather chestplate"
+				"value": "蓝色皮革上衣"
 			},
 			// We dont want it to stack
 			"minecraft:max_stack_size": 1,

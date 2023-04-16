@@ -9,7 +9,7 @@
 				"texture": "gold_nugget"
 			},
 			"minecraft:display_name": {
-				"value": "§eBack"
+				"value": "§e返回"
 			},
 			"minecraft:max_stack_size": 64
 		}

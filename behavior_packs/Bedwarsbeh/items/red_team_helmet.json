@@ -14,7 +14,7 @@
 				"texture": "red_team_helmet"
 			},
 			"minecraft:display_name": {
-				"value": "Red leather helmet"
+				"value": "红色皮革帽子"
 			},
 			"minecraft:max_stack_size": 1,
 			// Helm enchantment slot

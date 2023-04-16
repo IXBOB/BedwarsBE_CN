@@ -9,7 +9,7 @@
 				"texture": "iron_nugget"
 			},
 			"minecraft:display_name": {
-				"value": "§cIt is no longer possible\nto reduce the required players."
+				"value": "§c已经达到下限，\n无法再减少需要的玩家数"
 			},
 			"minecraft:max_stack_size": 64
 		}

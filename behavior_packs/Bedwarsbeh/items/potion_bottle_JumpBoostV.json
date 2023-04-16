@@ -10,7 +10,7 @@
                 "texture": "potion_bottle_JumpBoostV"
             },
             "minecraft:display_name": {
-                "value": "Potion of Leaping\n§7Jump Boost V (00:30)"
+                "value": "跳跃药水\n§7跳跃增强 V (00:30)"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.potion"

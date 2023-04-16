@@ -9,7 +9,7 @@
 				"texture": "fireball"
 			},
 			"minecraft:display_name": {
-				"value": "§6Fire\n§7[click / move to select]"
+				"value": "§6§l火焰\n§7[单击 / 移动 来选择]"
 			},
 			"minecraft:max_stack_size": 64
 		}
