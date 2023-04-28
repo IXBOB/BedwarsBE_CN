@@ -93,10 +93,10 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "蓝床有敌" 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
 #床被摧毁设置able_to_respawn红并设置重生点
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=1}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=1,respawning=!1}] able_to_respawn 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 210 0
 #床被摧毁设置able_to_respawn蓝并设置重生点
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=2}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=2,respawning=!1}] able_to_respawn 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 210 0
 #gameSTART为0时执行命令
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ function gameSTART0_functions
@@ -182,13 +182,13 @@ execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=2}] ~~
 #检测人数开始游戏相关================
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
 #此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c游戏正在进行，目前无法更改" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c游戏正在进行，目前无法更改" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c游戏正在进行，目前无法更改" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c游戏正在进行，目前无法更改" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c游戏正在进行，目前无法更改" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c游戏正在进行，目前无法更改" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l起床战争 >> §r§c游戏正在进行，目前无法更改" } ] }
 #删除非tag=op玩家的tag
 execute @a[tag=!op,tag=set.start.players.2] ~~~ tag @s remove set.start.players.2
 execute @a[tag=!op,tag=set.start.players.3] ~~~ tag @s remove set.start.players.3
@@ -388,10 +388,10 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2},ta
 #refresh_menu3
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3},tag=refresh_menu3] ~~~ function inventory_menu/refresh_menu/refresh_menu3
 #粒子显示
-execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
 
 #开始倒计时-1
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
