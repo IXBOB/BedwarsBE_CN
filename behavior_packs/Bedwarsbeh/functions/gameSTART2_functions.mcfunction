@@ -7,3 +7,5 @@ execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @a[scores={"分队
 #gamestart=2,复制告示牌游戏未开始
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ clone 293 4 296 293 4 296 -200 200 -204
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ setblock -200 201 -205 air
+#大厅actionbar
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @a[x=-218,y=193,z=-218,r=50] ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§r§f等级: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级"}},{ "text" : "    §r§f经验: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级经验"}},{ "text" : "§b / 1000\n" },{ "text" : "§r§f硬币: §e§l" },{ "score" : { "name" : "@s" , "objective" : "硬币数"}},{ "text" : "\n§r§f总击杀数: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总击杀数"}},{ "text" : "\n§r§f总胜利数: §e§l" },{ "score" : { "name" : "@s" , "objective" : "胜场数"}},{ "text" : "   §r§f总游戏数: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总游戏数"}} ] }

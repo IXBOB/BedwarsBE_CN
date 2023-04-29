@@ -94,4 +94,8 @@ execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ scoreboard players set @a[
 execute @e[type=armor_stand,scores={gameSTART=0,reseting=0,starting=0},tag=!reset_OK] ~~~ detect -203 201 -196 polished_blackstone_button 9 function button_change_map
 #游戏未开始tag-team
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team2 
+execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team2
+#设置重生时间100
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set * "重生时间" 100
+#设置able_to_respawn0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set * able_to_respawn 0
