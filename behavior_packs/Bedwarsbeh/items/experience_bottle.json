@@ -11,7 +11,7 @@
        "texture": "experience_bottle"
      },
      "minecraft:display_name": {
-       "value": "§aXP Bottle §7100 levels"
+       "value": "§a经验存储瓶 §7已存储 100 等级"
      },
      "minecraft:on_use": {
       "on_use": {

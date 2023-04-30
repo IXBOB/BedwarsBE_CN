@@ -132,11 +132,11 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players add @s "抬头返回time" -1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=..-130,able_to_respawn=0,"出局观战"=1}] ~~~ function spectator_headup_back_to_lobby
 #抬头返回title
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-30..-10,able_to_respawn=0}] ~~~ title @s actionbar §e■■■■■ Teleport to the lobby in 5 seconds ■■■■■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-50..-31,able_to_respawn=0}] ~~~ title @s actionbar §7■§e■■■■ Teleport to the lobby in 4 seconds ■■■■§7■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-70..-51,able_to_respawn=0}] ~~~ title @s actionbar §7■■§e■■■ Teleport to the lobby in 3 seconds ■■■§7■■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-90..-71,able_to_respawn=0}] ~~~ title @s actionbar §7■■■§e■■ Teleport to the lobby in 2 seconds ■■§7■■■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-110..-91,able_to_respawn=0}] ~~~ title @s actionbar §7■■■■§e■ Teleport to the lobby in 1 second ■§7■■■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-30..-10,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §e■■■■■ 在 5 秒后返回大厅 ■■■■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-50..-31,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■§e■■■■ 在 4 秒后返回大厅 ■■■■§7■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-70..-51,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■■§e■■■ 在 3 秒后返回大厅 ■■■§7■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-90..-71,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■■■§e■■ 在 2 秒后返回大厅 ■■§7■■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-110..-91,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■■■■§e■ 在 1 秒后返回大厅 ■§7■■■■
 #抬头相关功能结束================
 #游戏开始设置生存模式
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..2},x=0,y=184,z=52,r=10,m=2]
