@@ -25,8 +25,9 @@
 						"run_command": {
 							"command":[
 							"tag @s add set_fangyuta_mark_facing",
-							"execute @e[type=bedwars:fangyuta_mark] ~~~ tp @s ~~~ facing @a[tag=set_fangyuta_mark_facing]",
-							"execute @e[type=bedwars:fangyuta_mark] ~~~ scoreboard players set @s fangyuta_team 1"
+							"execute @e[type=bedwars:fangyuta_mark] ~~~ tp @s ~~~ facing @a[tag=set_fangyuta_mark_facing,c=1]",
+							"execute @e[type=bedwars:fangyuta_mark] ~~~ scoreboard players set @s fangyuta_team 1",
+							"tag @s remove set_fangyuta_mark_facing"
 							],
 							"target": "player"
 						}
