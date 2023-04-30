@@ -18,9 +18,6 @@ gamerule commandblocksenabled true
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=-1}] ~~~ function gamestart_reset_game_settings
 #游戏开始玩家头顶显示血量
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard objectives setdisplay belowname health
-#物品白名单
-#ZH-CN
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ kill @e[type=item,ry=0,rym=0,rx=0,rxm=0,name=!"橡木木板",name=!"红色羊毛",name=!"蓝色羊毛",name=!"末地石",name=!"红色染色玻璃",name=!"蓝色染色玻璃",name=!"炸药",name=!"Iron Ingot",name=!"Gold Ingot",name=!"Emerald",name=!"Diamond",name=!"末影珍珠",name=!"黑曜石"]
 #红床存在将红非挂机玩家存活设1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=1}] "存活" 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=1}] "存活" 1
