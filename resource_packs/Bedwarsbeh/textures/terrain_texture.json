@@ -227,13 +227,13 @@
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
 		"team_upgrade_protection_block_north": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+			"textures": "textures/blocks/team_upgrade_protection_block"
 		},
 		"team_upgrade_protection_block_east": {
 			"textures": "textures/blocks/team_upgrade_protection_block"
 		},
 		"team_upgrade_protection_block_south": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+			"textures": "textures/blocks/team_upgrade_protection_block"
 		},
 		"team_upgrade_protection_block_west": {												//WEST
 			"textures": "textures/blocks/team_upgrade_protection_block"
@@ -245,13 +245,13 @@
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
 		"team_upgrade_sharpness_block_north": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+			"textures": "textures/blocks/team_upgrade_sharpness_block"
 		},
 		"team_upgrade_sharpness_block_east": {
 			"textures": "textures/blocks/team_upgrade_sharpness_block"
 		},
 		"team_upgrade_sharpness_block_south": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+			"textures": "textures/blocks/team_upgrade_sharpness_block"
 		},
 		"team_upgrade_sharpness_block_west": {												//WEST
 			"textures": "textures/blocks/team_upgrade_sharpness_block"
@@ -263,13 +263,13 @@
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
 		"team_upgrade_trigger_block_north": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+			"textures": "textures/blocks/team_upgrade_trigger_block"
 		},
 		"team_upgrade_trigger_block_east": {
 			"textures": "textures/blocks/team_upgrade_trigger_block"
 		},
 		"team_upgrade_trigger_block_south": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+			"textures": "textures/blocks/team_upgrade_trigger_block"
 		},
 		"team_upgrade_trigger_block_west": {												//WEST
 			"textures": "textures/blocks/team_upgrade_trigger_block"
@@ -281,13 +281,13 @@
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
 		"buy_golden_apple_block_north": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+			"textures": "textures/blocks/buy_golden_apple_block"
 		},
 		"buy_golden_apple_block_east": {
 			"textures": "textures/blocks/buy_golden_apple_block"
 		},
 		"buy_golden_apple_block_south": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+			"textures": "textures/blocks/buy_golden_apple_block"
 		},
 		"buy_golden_apple_block_west": {												//WEST
 			"textures": "textures/blocks/buy_golden_apple_block"
