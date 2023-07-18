@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "barrier"
 			},
-			"minecraft:display_name": {
-				"value": "§6管理员设置\n§c您没有权限打开这个菜单\n§7如果您是地图管理员，输入 §o/tag @s add op§r§7 来取得权限"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

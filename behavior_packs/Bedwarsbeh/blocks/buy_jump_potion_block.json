@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:buy_jump_potion_block"
+			"identifier": "bedwars:buy_jump_boost_potion_block"
 		},
 		"components": {
 			"minecraft:destroy_time": 99999,
@@ -14,7 +14,7 @@
 			"bedwars:buy_jump_potion": {
 				"run_command":{
 				  "command":[
-					"execute @s[scores={分队=1..2,gameSTART=1}] ~~~ function shop_buy/shop_buy_jump_potion"
+					"execute @s[scores={分队=1..4,gameSTART=1}] ~~~ function shop_buy/shop_buy_jump_potion"
 					],
 					"target": "player"
 				  }

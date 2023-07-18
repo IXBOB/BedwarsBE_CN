@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "redstone_dust"
 			},
-			"minecraft:display_name": {
-				"value": "§c粒子效果装饰\n§7[单击 / 移动 来选择]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

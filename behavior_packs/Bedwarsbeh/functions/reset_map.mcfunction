@@ -1,83 +1,45 @@
 #reset(fill)1--------------------
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
-#reset(clone蓝家)1
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone -5 ~ -59 5 ~ -42 -5 ~176 -59
-#reset(clone红家)1
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 5 ~ 59 -5 ~ 42 -5 ~176 42
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone -21 ~ -21 -29 ~ -29 -29 ~176 -29
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 29 ~ -21 21 ~ -29 21 ~176 -29
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 29 ~ 29 21 ~ 21 21 ~176 21
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone -21 ~ 29 -29 ~ 21 -29 ~176 21
-#reset(clone绿宝石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 26 ~ 11 -32 ~ -11 -32 ~176 -11
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick=20}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
 #TP盔甲架向上
-execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
-#reset(fill)2--------------------
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
-#reset(clone蓝家)2
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 120 ~ -59 136 ~ -43 -8 ~176 -59
-#reset(clone红家)2
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 120 ~ 59 136 ~ 43 -8 ~176 43
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 149 ~ 30 158 ~ 20 21 ~176 20
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 108 ~ 20 98 ~ 30 -30 ~176 20
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 98 ~ -20 108 ~ -30 -30 ~176 -30
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 148 ~ -30 158 ~ -20 20 ~176 -30
-#reset(clone绿宝石点
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 136 ~ -8 120 ~ 7 -8 ~176 -8
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick=20}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
+#fill
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick=20}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
 #TP盔甲架向上
-execute @e[type=armor_stand,scores={"游戏地图"=2,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
-#reset(fill)3--------------------
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
-#reset(clone蓝家)3
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 271 ~ -59 243 ~ -40 -13 ~176 -59
-#reset(clone红家)3
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 241 ~ 40  269 ~ 59 -15 ~176 40
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 240 ~ -34 224 ~ -17 -32 ~176 -34
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 274 ~ -34 287 ~ -17 18 ~176 -34
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 274 ~ 33 290 ~ 16 18 ~176 16
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 237 ~ 33 224 ~ 16 -32 ~176 16
-#reset(clone绿宝石点）
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 clone 244 ~ -12 268 ~ 12 -12 ~176 -12
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick=20}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
+
 #删除重置时掉落的方块
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 kill @e[type=falling_block]
-#TP盔甲架向上
-execute @e[type=armor_stand,scores={"游戏地图"=3,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
+execute @e[type=armor_stand,scores={reseting=1}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 kill @e[type=falling_block]
+
 #检测reset完毕
-execute @e[type=armor_stand,name=reset,tag=reset,scores={gameSTART=0}] ~~~ detect ~ ~-1 ~ obsidian 0 tag @s add reset_finish
-execute @e[type=armor_stand,name=reset,tag=reset_finish,scores={gameSTART=0}] ~~~ tp @s 302 4 308
-execute @e[type=armor_stand,name=reset,tag=reset_finish,scores={gameSTART=0}] ~~~ tag @s remove reset
-execute @e[type=armor_stand,name=reset,tag=reset_finish,scores={gameSTART=0}] ~~~ tag @s remove reset_finish
+execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ obsidian 0 tag @s add reset_finish
+execute @e[type=armor_stand,name=reset,tag=reset_finish] ~~~ tag @s remove reset
+execute @e[type=armor_stand,name=reset,tag=reset_finish] ~~~ tag @s remove reset_finish
 #重置百分数 +1--------------------
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=7}] ~~~ scoreboard players add @s "重置百分数" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=14}] ~~~ scoreboard players add @s "重置百分数" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=20}] ~~~ scoreboard players add @s "重置百分数" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"text":"§e正在重置地图 - §l"},{ "score" : { "name" : "@s" , "objective" : "重置百分数"}},{"text":"% "}]}
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a subtitle §a§l - 重置完成 -
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ tag @e[type=armor_stand,name=main] add reset_OK
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a times 0 60 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a title §r 
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a subtitle §a§l- 重置完成 -
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set §r§r§r§r§r "等待显示" -8
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set "§emtw.so/6nID9e" "等待显示" -9
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0
-#疾速模式时复制红床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2}] ~~~ clone -44 4 -65 -50 7 -72 -3 185 43 masked
-#疾速模式时复制蓝床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2}] ~~~ clone -53 4 -65 -59 7 -72 -3 185 -50 masked
-#maskMode: MaskMode
-#指定是否过滤被复制方块。必须为下列之一：
-#masked — 仅复制非空气方块。会保持目的区域中原本会被替换为空气的方块不变。
-#replace — 复制所有方块，用源区域的方块覆盖目标区域中的所有方块。
-#若未定义，默认为replace。
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=..99,function_tick=7}] ~~~ scoreboard players add @s "重置百分数" 1
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=..99,function_tick=14}] ~~~ scoreboard players add @s "重置百分数" 1
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=..99,function_tick=20}] ~~~ scoreboard players add @s "重置百分数" 1
+execute @e[type=armor_stand,name=main,scores={reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"translate":"text.title.waitinfo.lobby_reseting","with":{"rawtext":[{ "score" : { "name" : "@s" , "objective" : "重置百分数"}}]}}]}
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ tag @e[type=armor_stand,name=main] add reset_OK
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ title @a times 0 60 0
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ titleraw @a title { "rawtext" : [{"translate":"text.title.waitinfo.lobby_reseting_blank"} ] }
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ titleraw @a subtitle { "rawtext" : [{"translate":"text.subtitle.waitinfo.lobby_reset_complete"} ] }
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.blank_5 "等待显示" -8
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.website "等待显示" -9
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0
+
+#重置红家
+execute @e[type=armor_stand,name=main,scores={reseting=1,"红已重置"=0,"重置百分数"=50}] ~~~ function reset_map/base/red
+#重置蓝家
+execute @e[type=armor_stand,name=main,scores={reseting=1,"蓝已重置"=0,"重置百分数"=50}] ~~~ function reset_map/base/blue
+#重置黄家
+execute @e[type=armor_stand,name=main,scores={reseting=1,"黄已重置"=0,"重置百分数"=50}] ~~~ function reset_map/base/yellow
+#重置绿家
+execute @e[type=armor_stand,name=main,scores={reseting=1,"绿已重置"=0,"重置百分数"=50}] ~~~ function reset_map/base/green
+#重置钻岛
+execute @e[type=armor_stand,name=main,scores={reseting=1,"钻已重置"=0,"重置百分数"=50}] ~~~ function reset_map/diamond_island
+#重置中岛
+execute @e[type=armor_stand,name=main,scores={reseting=1,"中已重置"=0,"重置百分数"=50}] ~~~ function reset_map/emerald_island
+#删除多余的结构方块
+execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=85}] ~~~ function reset_map/delete_multiple_blocks
+#重置疾速模式床保护
+execute @e[type=armor_stand,name=main,scores={reseting=1,"保已重置"=0,"重置百分数"=86,"游戏模式"=2}] ~~~ function reset_map/rush_bed_protect

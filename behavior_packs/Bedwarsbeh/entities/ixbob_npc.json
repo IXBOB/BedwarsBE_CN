@@ -8,31 +8,31 @@
             "is_experimental": false
         },
         "components": {
-            "minecraft:damage_sensor": {
-                "triggers": [
+            "minecraft:custom_hit_test": {
+                "hitboxes": [
                     {
-                        "on_damage": {
-                            "filters": {
-                                "any_of": [
-                                    {
-                                        "all_of": [
-                                            {
-                                                "test": "has_tag",
-                                                "value": "registered"
-                                            },
-                                            {
-                                                "test": "has_tag",
-                                                "subject": "other",
-                                                "value": "registered"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        },
-                        "deals_damage": false
+                        "pivot": [
+                            0,
+                            100,
+                            0
+                        ],
+                        "width": 0,
+                        "height": 0
                     }
                 ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "deals_damage": false
+                }
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+                "width": 0.0001,
+                "height": 0.0001
             }
         }
     }

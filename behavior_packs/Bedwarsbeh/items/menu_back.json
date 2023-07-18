@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "gold_nugget"
 			},
-			"minecraft:display_name": {
-				"value": "§e返回"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

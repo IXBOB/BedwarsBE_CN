@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "repeater"
 			},
-			"minecraft:display_name": {
-				"value": "§6管理员菜单\n§7[单击 / 移动 来选择]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

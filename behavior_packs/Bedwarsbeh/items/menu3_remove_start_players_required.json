@@ -9,9 +9,6 @@
 			"minecraft:icon": {
 				"texture": "iron_nugget"
 			},
-			"minecraft:display_name": {
-				"value": "§e需要的玩家数减少 1 \n§7[单击 / 移动 来选择]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

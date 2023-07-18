@@ -1,2 +1,1 @@
-execute @a[tag=op,tag=command.help.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§2§l显示指令帮助第 2/2 页\n输入 /tag @s add command.help.<数字> 前往指定页面\n§r§f这里什么也没有，更多功能正在开发"} ] }
-execute @a[tag=op,tag=command.help.2] ~~~ tag @s remove command.help.2
+tellraw @s { "rawtext" : [ {"translate":"text.tellraw.custom_command.help_page_2_line1"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_2_line2"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_2_line3"} ] }

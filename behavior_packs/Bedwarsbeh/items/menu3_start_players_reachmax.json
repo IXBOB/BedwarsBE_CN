@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "gold_nugget"
 			},
-			"minecraft:display_name": {
-				"value": "§c已经达到上限，\n无法再增加需要的玩家数"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

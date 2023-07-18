@@ -1,2 +1,1 @@
-execute @a[tag=op,tag=command.help] ~~~ tag @s add command.help.1
-execute @a[tag=op,tag=command.help] ~~~ tag @s remove command.help
+tellraw @s { "rawtext" : [ {"translate":"text.tellraw.custom_command.help_page_1_line1"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_1_line2"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_1_line3"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_1_line4"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_1_line5"} ] }
