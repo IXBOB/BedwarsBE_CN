@@ -5,6 +5,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=..2}
 execute @a[tag=upgrade_yellow_protection] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.purchase_team_upgrade_protection"} ] }
 execute @a[tag=upgrade_yellow_protection] ~~~ tellraw @a[scores={"分队"=3}] { "rawtext" : [ { "text" : "§e " } ,{ "selector" :  "@a[tag=want_upgrade_protection_yellow]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_team_upgrade_protection"}] }
 execute @a[tag=upgrade_yellow_protection] ~~~ playsound note.pling @s ~~~
+execute @a[tag=upgrade_yellow_protection] ~~~ scoreboard players add @s own_xp -300
 execute @a[tag=upgrade_yellow_protection] ~~~ xp -300L @s
 execute @a[tag=upgrade_yellow_protection] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "黄保护等级" 1
 execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=upgrade_yellow_protection] ~~~ function team_upgrade_PROTECTIONandSHARPNESS

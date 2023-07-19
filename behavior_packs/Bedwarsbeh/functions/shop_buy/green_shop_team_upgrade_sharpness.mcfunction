@@ -5,7 +5,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=..2}
 execute @a[tag=upgrade_green_strength] ~~~ tellraw @s { "rawtext" : [ { "text" : "§d§lYou upgraded the §r§6team SHARPNESS" } ] }
 execute @a[tag=upgrade_green_strength] ~~~ tellraw @a[scores={"分队"=4}] { "rawtext" : [ { "text" : "§lShop · Team Upgrade >> §e " } ,{ "selector" :  "@a[tag=want_upgrade_sharpness_green]"},{ "text" : "§f§l upgraded the team SHARPNESS" }] }
 execute @a[tag=upgrade_green_strength] ~~~ playsound note.pling @s ~~~
-execute @a[tag=upgrade_green_strength] ~~~  xp -400L @s
+execute @a[tag=upgrade_green_strength] ~~~ scoreboard players add @s own_xp -400
+execute @a[tag=upgrade_green_strength] ~~~ xp -400L @s
 execute @a[tag=upgrade_green_strength] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "绿锋利等级" 1
 execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=upgrade_green_strength] ~~~ function team_upgrade_PROTECTIONandSHARPNESS
 execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ execute @a[tag=upgrade_green_strength] ~~~ function team_upgrade_PROTECTIONandSHARPNESS_old2
