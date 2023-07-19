@@ -77,3 +77,6 @@ execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ kill @e[type=bedwars:d
 execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ kill @e[type=bedwars:emerald_point_revolve,c=1,r=20]
+
+
+

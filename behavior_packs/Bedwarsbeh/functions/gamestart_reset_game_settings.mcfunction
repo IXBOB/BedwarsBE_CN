@@ -30,6 +30,8 @@ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "黄�
 scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "绿床存活" 1
 #gameSTART -> 1
 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] gameSTART 1
+#able_to_respawn -> 1
+scoreboard players set @a[scores={"分队"=1..4}] able_to_respawn 1
 #重生时间 -> 100
 scoreboard players set @a[scores={"分队"=1..4}] "重生时间" 100
 #XP清空
@@ -135,6 +137,14 @@ execute @a[scores={"分队"=2}] ~~~ scoreboard players set @e[type=armor_stand,n
 execute @a[scores={"分队"=3}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "蓝队存在" 1
 #绿队存在-> 1
 execute @a[scores={"分队"=4}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "绿队存在" 1
+#红队tag+team1
+tag @a[scores={"分队"=1}] add team1
+#蓝队tag+team2
+tag @a[scores={"分队"=2}] add team2
+#黄队tag+team3
+tag @a[scores={"分队"=3}] add team3
+#绿队tag+team4
+tag @a[scores={"分队"=4}] add team4
 #删除red_team_ace_tellrawed tag
 tag @s remove red_team_ace_tellrawed
 #删除blue_team_ace_tellrawed tag
@@ -143,8 +153,6 @@ tag @s remove blue_team_ace_tellrawed
 tag @s remove yellow_team_ace_tellrawed
 #删除green_team_ace_tellrawed tag
 tag @s remove green_team_ace_tellrawed
-#reset will_get_XP
-scoreboard players reset * will_get_XP
 #R_iron_count_1 -> 0
 #R_iron_count_2 -> 0
 #R_iron_count_3 -> 0

@@ -136,6 +136,7 @@ text.tellraw.custom_command.help_page_1_line5=§r§f/function console/settings/s
 text.tellraw.custom_command.help_page_2_line1=§a§lShowing help page 2 of 2
 text.tellraw.custom_command.help_page_2_line2=§r§aenter /function console/help.<number> to go to the specified page
 text.tellraw.custom_command.help_page_2_line3=§r§fnothing on this page
+text.tellraw.custom_command.change_danied=§cSorry, The game is in progress. You can't change it now
 text.tellraw.custom_commands.set_player_count_2=§eOP changed the minimum players required to start the game to 2
 text.tellraw.custom_commands.set_player_count_3=§eOP changed the minimum players required to start the game to 3
 text.tellraw.custom_commands.set_player_count_4=§eOP changed the minimum players required to start the game to 4
@@ -150,6 +151,7 @@ text.tellraw.custom_commands.set_player_count_5_already=§cThe minimum number of
 text.tellraw.custom_commands.set_player_count_6_already=§cThe minimum number of players required to start the game has already been set to 6
 text.tellraw.custom_commands.set_player_count_7_already=§cThe minimum number of players required to start the game has already been set to 7
 text.tellraw.custom_commands.set_player_count_8_already=§cThe minimum number of players required to start the game has already been set to 8
+
 
 ##wait
 
@@ -240,8 +242,8 @@ text.scoreboard.waitinfo.start_in_13=§aStart in 13s
 text.scoreboard.waitinfo.start_in_12=§aStart in 12s
 text.scoreboard.waitinfo.start_in_11=§aStart in 11s
 text.scoreboard.waitinfo.start_in_10=§aStart in 10s
-text.scoreboard.waitinfo.start_in_8=§aStart in 8s
 text.scoreboard.waitinfo.start_in_9=§aStart in 9s
+text.scoreboard.waitinfo.start_in_8=§aStart in 8s
 text.scoreboard.waitinfo.start_in_7=§aStart in 7s
 text.scoreboard.waitinfo.start_in_6=§aStart in 6s
 text.scoreboard.waitinfo.start_in_5=§aStart in 5s
@@ -622,7 +624,7 @@ text.sign.lobby.map_2_locked_line4=§r§cbefore reset
 text.sign.lobby.map_3_locked_line1=§f§lMAP
 text.sign.lobby.map_3_locked_line2=§r§bDeep Ocean
 text.sign.lobby.map_3_locked_line3=§cPlease change
-text.sign.lobby.map_3_locked_line4=§cbefore reset
+text.sign.lobby.map_3_locked_line4=§r§cbefore reset
 
 
 
