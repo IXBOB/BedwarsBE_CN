@@ -5,3 +5,4 @@ execute @s[lm=36] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingam
 execute @s[lm=36] ~~~ playsound note.pling @s ~~~
 execute @s[lm=36] ~~~ scoreboard players add @s own_xp -36
 execute @s[lm=36] ~~~ xp -36L @s
+execute @s[tag=give_end_stone] ~~~ function shop_buy/give_items/give_end_stone

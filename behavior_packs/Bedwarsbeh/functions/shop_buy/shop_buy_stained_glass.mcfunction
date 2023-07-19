@@ -8,3 +8,7 @@ execute @s[lm=20] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingam
 execute @s[lm=20] ~~~ playsound note.pling @s ~~~
 execute @s[lm=20] ~~~ scoreboard players add @s own_xp -20
 execute @s[lm=20] ~~~ xp -20L @s
+execute @s[tag=give_red_glass] ~~~ function shop_buy/give_items/give_red_glass
+execute @s[tag=give_blue_glass] ~~~ function shop_buy/give_items/give_blue_glass
+execute @s[tag=give_yellow_glass] ~~~ function shop_buy/give_items/give_yellow_glass
+execute @s[tag=give_green_glass] ~~~ function shop_buy/give_items/give_green_glass
