@@ -14,7 +14,8 @@
 			"bedwars:buy_yellow_wool": {
 				"run_command":{
 				  "command":[
-					"execute @s[scores={分队=1..4,gameSTART=1}] ~~~ function shop_buy/shop_buy_wool"
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ summon bedwars:shop_purchase_wool_command",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ tag @s add shop_purchase_wool"
 					],
 					"target": "player"
 				  }
