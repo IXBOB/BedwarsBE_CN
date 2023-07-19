@@ -8,3 +8,7 @@ execute @s[lm=8] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingame
 execute @s[lm=8] ~~~ playsound note.pling @s ~~~ 
 execute @s[lm=8] ~~~ scoreboard players add @s own_xp -8
 execute @s[lm=8] ~~~ xp -8L @s
+execute @s[tag=give_red_wool] ~~~ function shop_buy/give_items/give_red_wool
+execute @s[tag=give_blue_wool] ~~~ function shop_buy/give_items/give_blue_wool
+execute @s[tag=give_yellow_wool] ~~~ function shop_buy/give_items/give_yellow_wool
+execute @s[tag=give_green_wool] ~~~ function shop_buy/give_items/give_green_wool
