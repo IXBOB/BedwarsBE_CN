@@ -7,7 +7,7 @@
          "path" : "attachables/green_team_chestplate.json"
       },
       {
-         "path" : "textures/blocks/player_end_stone.png"
+         "path" : "textures/blocks/player_endstone.png"
       },
       {
          "path" : "animation_controllers/revolve.json"
@@ -37,7 +37,7 @@
          "path" : "attachables/blue_team_chestplate.json"
       },
       {
-         "path" : "textures/blocks/buy_invisibility_potion_block.png"
+         "path" : "textures/blocks/purchase_invisibility_potion_block.png"
       },
       {
          "path" : "attachables/red_team_chestplate_protectionIII.json"
@@ -85,7 +85,7 @@
          "path" : "textures/blocks/player_obsidian.png"
       },
       {
-         "path" : "textures/blocks/buy_tnt_block.png"
+         "path" : "textures/blocks/purchase_tnt_block.png"
       },
       {
          "path" : "attachables/blue_team_chestplate_protectionIII.json"
@@ -160,7 +160,7 @@
          "path" : "attachables/chainmail_leggings_protectionIII.json"
       },
       {
-         "path" : "textures/blocks/buy_green_glass_block.png"
+         "path" : "textures/blocks/purchase_green_glass_block.png"
       },
       {
          "path" : "attachables/red_team_helmet.json"
@@ -196,7 +196,7 @@
          "path" : "textures/blocks/map_light_blue_concrete_block.png"
       },
       {
-         "path" : "textures/blocks/buy_blue_glass_block.png"
+         "path" : "textures/blocks/purchase_blue_glass_block.png"
       },
       {
          "path" : "attachables/green_team_boots_protectionI.json"
@@ -220,7 +220,7 @@
          "path" : "textures/blocks/team_upgrade_trap_alarm.png"
       },
       {
-         "path" : "textures/blocks/buy_bridge_egg_block.png"
+         "path" : "textures/blocks/purchase_bridge_egg_block.png"
       },
       {
          "path" : "attachables/green_team_chestplate_protectionIII.json"
@@ -490,7 +490,7 @@
          "path" : "textures/items/blue_team_helmet.png"
       },
       {
-         "path" : "textures/blocks/buy_green_wool_block.png"
+         "path" : "textures/blocks/purchase_green_wool_block.png"
       },
       {
          "path" : "models/blocks/green_bed_head.geo.json"
@@ -559,7 +559,7 @@
          "path" : "models/entity/npc_lobby_guide_2.geo.json"
       },
       {
-         "path" : "textures/blocks/buy_fireball_block.png"
+         "path" : "textures/blocks/purchase_fireball_block.png"
       },
       {
          "path" : "models/entity/npc_lobby_guide_3.geo.json"
@@ -577,7 +577,7 @@
          "path" : "textures/blocks/map_dark_prismarine_block.png"
       },
       {
-         "path" : "textures/blocks/buy_upgrade_axe_block.png"
+         "path" : "textures/blocks/purchase_upgrade_axe_block.png"
       },
       {
          "path" : "sounds/random/levelup.ogg"
@@ -613,13 +613,13 @@
          "path" : "textures/entity/armor_stand.png"
       },
       {
-         "path" : "textures/blocks/buy_blue_wool_block.png"
+         "path" : "textures/blocks/purchase_blue_wool_block.png"
       },
       {
          "path" : "texts/hu_HU.lang"
       },
       {
-         "path" : "textures/blocks/buy_upgrade_armor_block.png"
+         "path" : "textures/blocks/purchase_upgrade_armor_block.png"
       },
       {
          "path" : "texts/it_IT.lang"
@@ -676,49 +676,49 @@
          "path" : "textures/blocks/red_bed_head.png"
       },
       {
-         "path" : "textures/blocks/buy_arrow_block.png"
+         "path" : "textures/blocks/purchase_arrow_block.png"
       },
       {
-         "path" : "textures/blocks/buy_bow_block.png"
+         "path" : "textures/blocks/purchase_bow_block.png"
       },
       {
-         "path" : "textures/blocks/buy_yellow_glass_block.png"
+         "path" : "textures/blocks/purchase_yellow_glass_block.png"
       },
       {
-         "path" : "textures/blocks/buy_end_stone_block.png"
+         "path" : "textures/blocks/purchase_endstone_block.png"
       },
       {
-         "path" : "textures/blocks/buy_fangyuta_block.png"
+         "path" : "textures/blocks/purchase_popup_tower_block.png"
       },
       {
          "path" : "textures/particle/particles.png"
       },
       {
-         "path" : "textures/blocks/buy_golden_apple_block.png"
+         "path" : "textures/blocks/purchase_golden_apple_block.png"
       },
       {
-         "path" : "textures/blocks/buy_jump_boost_potion_block.png"
+         "path" : "textures/blocks/purchase_jump_boost_potion_block.png"
       },
       {
-         "path" : "textures/blocks/buy_planks_block.png"
+         "path" : "textures/blocks/purchase_planks_block.png"
       },
       {
-         "path" : "textures/blocks/buy_red_glass_block.png"
+         "path" : "textures/blocks/purchase_red_glass_block.png"
       },
       {
-         "path" : "textures/blocks/buy_red_wool_block.png"
+         "path" : "textures/blocks/purchase_red_wool_block.png"
       },
       {
-         "path" : "textures/blocks/buy_upgrade_pickaxe_block.png"
+         "path" : "textures/blocks/purchase_upgrade_pickaxe_block.png"
       },
       {
-         "path" : "textures/blocks/buy_upgrade_sword_block.png"
+         "path" : "textures/blocks/purchase_upgrade_sword_block.png"
       },
       {
-         "path" : "textures/blocks/buy_xp_bottle_block.png"
+         "path" : "textures/blocks/purchase_xp_bottle_block.png"
       },
       {
-         "path" : "textures/blocks/buy_yellow_wool_block.png"
+         "path" : "textures/blocks/purchase_yellow_wool_block.png"
       },
       {
          "path" : "textures/items/blue_team_boots.png"
@@ -814,7 +814,7 @@
          "path" : "textures/blocks/player_blue_wool.png"
       },
       {
-         "path" : "textures/blocks/player_fangyuta.png"
+         "path" : "textures/blocks/player_popup_tower.png"
       },
       {
          "path" : "textures/blocks/player_green_stained_glass.png"
