@@ -14,7 +14,7 @@
 			"bedwars:purchase_upgrade_axe": {
 				"run_command":{
 				  "command":[
-					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ summon bedwars:shop_purchase_upgrade_axe",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ summon bedwars:shop_purchase_upgrade_axe_command",
 					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ tag @s add shop_purchase_upgrade_axe"
 					],
 					"target": "player"

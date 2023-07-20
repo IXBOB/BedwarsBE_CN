@@ -180,36 +180,36 @@
 		},
 		"sound": "wood"
 	},
-	"bedwars:team_upgrade_trap_block": {
+	"bedwars:purchase_upgrade_team_trap_block": {
 		"textures": {
-			"up": "team_upgrade_trap_block_up",
-			"down": "team_upgrade_trap_block_down",
-			"north": "team_upgrade_trap_block_north",
-			"south": "team_upgrade_trap_block_south",
-			"west": "team_upgrade_trap_block_west",
-			"east": "team_upgrade_trap_block_east"
+			"up": "purchase_upgrade_team_trap_block_up",
+			"down": "purchase_upgrade_team_trap_block_down",
+			"north": "purchase_upgrade_team_trap_block_north",
+			"south": "purchase_upgrade_team_trap_block_south",
+			"west": "purchase_upgrade_team_trap_block_west",
+			"east": "purchase_upgrade_team_trap_block_east"
 		},
 		"sound": "wood"
 	},
-	"bedwars:team_upgrade_sharpness_block": {
+	"bedwars:purchase_upgrade_team_sharpness_block": {
 		"textures": {
-			"up": "team_upgrade_sharpness_block_up",
-			"down": "team_upgrade_sharpness_block_down",
-			"north": "team_upgrade_sharpness_block_north",
-			"south": "team_upgrade_sharpness_block_south",
-			"west": "team_upgrade_sharpness_block_west",
-			"east": "team_upgrade_sharpness_block_east"
+			"up": "purchase_upgrade_team_sharpness_block_up",
+			"down": "purchase_upgrade_team_sharpness_block_down",
+			"north": "purchase_upgrade_team_sharpness_block_north",
+			"south": "purchase_upgrade_team_sharpness_block_south",
+			"west": "purchase_upgrade_team_sharpness_block_west",
+			"east": "purchase_upgrade_team_sharpness_block_east"
 		},
 		"sound": "wood"
 	},
-	"bedwars:team_upgrade_protection_block": {
+	"bedwars:purchase_upgrade_team_protection_block": {
 		"textures": {
-			"up": "team_upgrade_protection_block_up",
-			"down": "team_upgrade_protection_block_down",
-			"north": "team_upgrade_protection_block_north",
-			"south": "team_upgrade_protection_block_south",
-			"west": "team_upgrade_protection_block_west",
-			"east": "team_upgrade_protection_block_east"
+			"up": "purchase_upgrade_team_protection_block_up",
+			"down": "purchase_upgrade_team_protection_block_down",
+			"north": "purchase_upgrade_team_protection_block_north",
+			"south": "purchase_upgrade_team_protection_block_south",
+			"west": "purchase_upgrade_team_protection_block_west",
+			"east": "purchase_upgrade_team_protection_block_east"
 		},
 		"sound": "wood"
 	},

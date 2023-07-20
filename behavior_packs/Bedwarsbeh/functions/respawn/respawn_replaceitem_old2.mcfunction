@@ -99,7 +99,6 @@ execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] 
 execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=4},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.chest 0 bedwars:green_team_chestplate_protectionIII
 execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=4,"防具等级"=1},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.legs 0 bedwars:green_team_leggings_protectionIII
 execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=4,"防具等级"=1},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.feet 0 bedwars:green_team_boots_protectionIII
-respawning=1
 #replaceitem防具
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=1,"防具等级"=2},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.legs 0 chainmail_leggings 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=1,"防具等级"=2},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.feet 0 chainmail_boots 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
@@ -136,7 +135,6 @@ execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=2},name=main] 
 execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=2},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=4,"防具等级"=2},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.feet 0 bedwars:chainmail_boots_protectionII
 execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=4,"防具等级"=2},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.legs 0 bedwars:chainmail_leggings_protectionIII
 execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=4,"防具等级"=2},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.feet 0 bedwars:chainmail_boots_protectionIII
-respawning=1
 #replaceitem防具
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=1,"防具等级"=3},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.legs 0 iron_leggings 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[scores={able_to_respawn=1,respawning=1,"分队"=1,"防具等级"=3},tag=run_respawn_command] ~~~ replaceitem entity @s slot.armor.feet 0 iron_boots 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}   

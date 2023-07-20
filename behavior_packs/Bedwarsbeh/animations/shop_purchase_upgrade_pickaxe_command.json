@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.command.shop_purchase_upgrade_sxe": {
+		"animation.command.shop_purchase_upgrade_pickaxe": {
 			"animation_length": 0.1,
 			"loop": false,
 			"timeline": {
