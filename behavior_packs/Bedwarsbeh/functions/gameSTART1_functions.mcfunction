@@ -86,7 +86,8 @@ spawnpoint @a[scores={"分队"=1..4}] 0 210 0
 #增加并计算游戏时间
 execute @s[scores={function_tick=20}] ~~~ function add_and_calculate_game_time
 #抬头返回功能
-function headup_back_to_lobby
+execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
+execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ function headup_back_to_lobby
 #移除非本队tag
 tag @a[scores={"分队"=1}] remove team2
 tag @a[scores={"分队"=1}] remove team3
