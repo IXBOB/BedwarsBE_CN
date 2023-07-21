@@ -76,7 +76,7 @@ execute @a[scores={"分队"=4,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126]
 #淘汰后玩家actionbar
 titleraw @a[rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1,"存活"=!1}] actionbar { "rawtext" : [{"translate":"text.actionbar.ingameinfo.spectator_information_line1"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line2"},{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line3"},{"selector":"@a[scores={分队=1,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line4"},{"selector":"@a[scores={分队=2,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line5"},{"selector":"@a[scores={分队=3,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line6"},{"selector":"@a[scores={分队=4,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line7"} ] }
 #删除背包
-clear @a[scores={"出局观战"=1,respawning=0}]
+execute @s[scores={function_tick=20}] ~~~ clear @a[scores={"出局观战"=1,respawning=0}]
 #删除屏障上的僵尸猪人
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
 #删除屏障上的掉落物
@@ -88,18 +88,18 @@ execute @s[scores={function_tick=20}] ~~~ function add_and_calculate_game_time
 #抬头返回功能
 function headup_back_to_lobby
 #移除非本队tag
-tag @a[scores={"分队"=!1}] remove team2
-tag @a[scores={"分队"=!1}] remove team3
-tag @a[scores={"分队"=!1}] remove team4
-tag @a[scores={"分队"=!2}] remove team1
-tag @a[scores={"分队"=!2}] remove team3
-tag @a[scores={"分队"=!2}] remove team4
-tag @a[scores={"分队"=!3}] remove team1
-tag @a[scores={"分队"=!3}] remove team2
-tag @a[scores={"分队"=!3}] remove team4
-tag @a[scores={"分队"=!4}] remove team1
-tag @a[scores={"分队"=!4}] remove team2
-tag @a[scores={"分队"=!4}] remove team3
+tag @a[scores={"分队"=1}] remove team2
+tag @a[scores={"分队"=1}] remove team3
+tag @a[scores={"分队"=1}] remove team4
+tag @a[scores={"分队"=2}] remove team1
+tag @a[scores={"分队"=2}] remove team3
+tag @a[scores={"分队"=2}] remove team4
+tag @a[scores={"分队"=3}] remove team1
+tag @a[scores={"分队"=3}] remove team2
+tag @a[scores={"分队"=3}] remove team4
+tag @a[scores={"分队"=4}] remove team1
+tag @a[scores={"分队"=4}] remove team2
+tag @a[scores={"分队"=4}] remove team3
 #检测获取经验
 function ore_get
 #检测经验变化时重新计算经验

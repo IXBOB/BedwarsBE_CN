@@ -15,7 +15,7 @@
 				"run_command":{
 				  "command":[
 					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ summon bedwars:shop_purchase_upgrade_team_sharpness_command",
-					"execute @s[scores={分队=1,出局观战=0,gameSTART=1}] ~~~ tag @s add shop_purchase_upgrade_team_sharpness"
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ tag @s add shop_purchase_upgrade_team_sharpness"
 					],
 					"target": "player"
 				  }

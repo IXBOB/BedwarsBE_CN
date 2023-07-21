@@ -10,7 +10,7 @@ scoreboard players set text.scoreboard.ingameinfo.blue_team_wiped_out "游戏显
 scoreboard players set text.scoreboard.ingameinfo.yellow_team_wiped_out "游戏显示" -5
 scoreboard players set text.scoreboard.ingameinfo.green_team_wiped_out "游戏显示" -5
 #title其它队失败
-title @a[scores={"分队"=!1}] title §c§lGAME OVER
+titleraw @a[scores={"分队"=!1}] title { "rawtext" : [{"translate":"text.title.ingameinfo.gameover"} ] }
 #删除副标题
 title @a subtitle §r
 #胜场数+1
