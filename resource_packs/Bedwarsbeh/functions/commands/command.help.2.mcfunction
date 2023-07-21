@@ -1,0 +1,1 @@
+tellraw @s { "rawtext" : [ {"translate":"text.tellraw.custom_command.help_page_2_line1"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_2_line2"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_2_line3"} ] }
