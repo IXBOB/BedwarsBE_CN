@@ -1,1 +1,0 @@
-function commands/command.help

@@ -107,21 +107,21 @@ execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出
 execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players operation @s own_xp_cache = @s own_xp
 #事件系统相关================
 #事件开始初始化
-execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示" 120
-execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示" 900
+execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "显示" 120
+execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
 scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
 #事件倒计时-1
 scoreboard players add @s[scores={"显示事件"=1..8,function_tick=20}] "事件倒计时" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_2 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=3,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_3 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=4,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_4 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=5,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_5 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_6 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_7 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_8 "游戏显示" -1
-execute @s[scores={"游戏模式"=2,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示" -1
-execute @s[scores={"游戏模式"=2,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_2 "游戏显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_1 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_2 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=3,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_3 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=4,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_4 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=5,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_5 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_6 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_7 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_8 "显示" -1
+execute @s[scores={"游戏模式"=2,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_1 "显示" -1
+execute @s[scores={"游戏模式"=2,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_2 "显示" -1
 #事件1
 execute @s[scores={"显示事件"=1}] ~~~ function events/choose_execute_event_1
 #事件2

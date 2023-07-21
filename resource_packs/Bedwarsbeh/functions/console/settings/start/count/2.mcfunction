@@ -1,1 +1,0 @@
-tag @s add set.start.players.2
