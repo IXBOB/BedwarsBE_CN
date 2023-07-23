@@ -22,7 +22,7 @@ execute @s[scores={function_tick=20}] ~~~ execute @a[scores={firework=1}] ~~~ su
 execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 particle minecraft:dragon_death_explosion_emitter ~~~
 execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #更改游戏模式
-gamemode 2 @a[tag=!insider]
+gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
 #删除disabled_content
 kill @e[type=item,name=disabled_content]
 #删除背包

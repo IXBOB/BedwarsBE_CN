@@ -171,7 +171,6 @@ execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ particle mi
 #test in_lobby
 scoreboard players set @a in_lobby 0
 scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
-
 #PARTICLE_menu
 #menu_page1
 execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
