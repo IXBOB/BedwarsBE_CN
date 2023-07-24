@@ -1,2 +1,2 @@
-give @a[tag=give_golden_apple] golden_apple 1  
-tag @a remove give_golden_apple
+give @s[tag=give_golden_apple] golden_apple 1  
+tag @s remove give_golden_apple

@@ -1,2 +1,2 @@
-give @a[tag=give_blue_stained_glass] bedwars:player_blue_stained_glass 4
-tag @a remove give_blue_stained_glass
+give @s[tag=give_blue_stained_glass] bedwars:player_blue_stained_glass 4
+tag @s remove give_blue_stained_glass
