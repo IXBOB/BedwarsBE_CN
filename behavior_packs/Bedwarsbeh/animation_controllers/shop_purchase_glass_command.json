@@ -1,12 +1,12 @@
 {
   "format_version": "1.17.30",
     "animation_controllers": {
-      "controller.animation.command.shop_purchase_glass": {
+      "controller.animation.command.shop_purchase_stained_glass": {
         "initial_state": "run_timer",
         "states": {
           "run_timer": {
             "animations": [
-              "shop_purchase_glass"
+              "shop_purchase_stained_glass"
            ]
          }
         }

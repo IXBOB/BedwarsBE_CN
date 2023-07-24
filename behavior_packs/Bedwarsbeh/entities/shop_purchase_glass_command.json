@@ -2,18 +2,18 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "bedwars:shop_purchase_glass_command",
+            "identifier": "bedwars:shop_purchase_stained_glass_command",
             "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false,
             "scripts": {
               "animate": [
-                "shop_purchase_glass_animation_controller"
+                "shop_purchase_stained_glass_animation_controller"
               ]
             },
             "animations": {
-              "shop_purchase_glass_animation_controller": "controller.animation.command.shop_purchase_glass",
-              "shop_purchase_glass": "animation.command.shop_purchase_glass"
+              "shop_purchase_stained_glass_animation_controller": "controller.animation.command.shop_purchase_stained_glass",
+              "shop_purchase_stained_glass": "animation.command.shop_purchase_stained_glass"
             }
         },
         "components":{

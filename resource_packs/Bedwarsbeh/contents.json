@@ -169,7 +169,7 @@
          "path" : "attachables/diamond_boots_protection_iii.json"
       },
       {
-         "path" : "textures/blocks/purchase_green_glass_block.png"
+         "path" : "textures/blocks/purchase_green_stained_glass_block.png"
       },
       {
          "path" : "attachables/diamond_leggings_protection_i.json"
@@ -544,7 +544,7 @@
          "path" : "textures/blocks/upgrade_team_trap_counter_offensive.png"
       },
       {
-         "path" : "textures/blocks/purchase_yellow_glass_block.png"
+         "path" : "textures/blocks/purchase_yellow_stained_glass_block.png"
       },
       {
          "path" : "texts/bg_BG.lang"
@@ -787,7 +787,7 @@
          "path" : "textures/blocks/purchase_arrow_block.png"
       },
       {
-         "path" : "textures/blocks/purchase_blue_glass_block.png"
+         "path" : "textures/blocks/purchase_blue_stained_glass_block.png"
       },
       {
          "path" : "textures/blocks/purchase_blue_wool_block.png"
@@ -814,7 +814,7 @@
          "path" : "textures/blocks/purchase_popup_tower_block.png"
       },
       {
-         "path" : "textures/blocks/purchase_red_glass_block.png"
+         "path" : "textures/blocks/purchase_red_stained_glass_block.png"
       },
       {
          "path" : "textures/blocks/purchase_tnt_block.png"
