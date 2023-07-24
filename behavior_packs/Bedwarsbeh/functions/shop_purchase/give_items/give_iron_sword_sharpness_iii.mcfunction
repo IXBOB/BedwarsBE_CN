@@ -1,2 +1,1 @@
-give @s[tag=give_iron_sword_sharpness_iii] bedwars:iron_sword_sharpness_iii 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}} 
-tag @s remove give_iron_sword_sharpness_iii
+give @s bedwars:iron_sword_sharpness_iii 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}} 

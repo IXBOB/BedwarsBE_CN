@@ -1,2 +1,1 @@
-clear @a[tag=clear_stone_sword_sharpness_iI] bedwars:stone_sword_sharpness_iI
-tag @a remove clear_stone_sword_sharpness_iI
+clear @s bedwars:stone_sword_sharpness_ii

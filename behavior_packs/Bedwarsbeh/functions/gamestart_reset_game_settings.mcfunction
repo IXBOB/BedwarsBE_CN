@@ -245,7 +245,7 @@ execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:di
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point
 #删除附魔锋利tag
 tag @a remove have_upgraded_sword_sharpness_i
-tag @a remove have_upgraded_sword_sharpness_iI
+tag @a remove have_upgraded_sword_sharpness_ii
 tag @a remove have_upgraded_sword_sharpness_iii
 #清空当局经验和当局金币
 scoreboard players set @a "当局经验" 0

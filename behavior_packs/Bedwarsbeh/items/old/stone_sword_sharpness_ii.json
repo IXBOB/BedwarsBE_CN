@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "bedwars:stone_sword_sharpness_iI",
+			"identifier": "bedwars:stone_sword_sharpness_ii",
 			// Notice we give it the equipment category
 			"category": "equipment"
 		},

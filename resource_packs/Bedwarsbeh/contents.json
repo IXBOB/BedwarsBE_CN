@@ -13,7 +13,7 @@
          "path" : "animations/bedwars_player_invisible.animation.json"
       },
       {
-         "path" : "attachables/red_team_chestplate_protection_iI.json"
+         "path" : "attachables/red_team_chestplate_protection_ii.json"
       },
       {
          "path" : "attachables/chainmail_boots_protection_iii.json"
@@ -40,10 +40,10 @@
          "path" : "attachables/yellow_team_chestplate.json"
       },
       {
-         "path" : "attachables/green_team_leggings_protection_iI.json"
+         "path" : "attachables/green_team_leggings_protection_ii.json"
       },
       {
-         "path" : "attachables/blue_team_boots_protection_iI.json"
+         "path" : "attachables/blue_team_boots_protection_ii.json"
       },
       {
          "path" : "textures/items/armor_upgrade.png"
@@ -55,7 +55,7 @@
          "path" : "attachables/blue_team_boots.json"
       },
       {
-         "path" : "attachables/blue_team_chestplate_protection_iI.json"
+         "path" : "attachables/blue_team_chestplate_protection_ii.json"
       },
       {
          "path" : "textures/blocks/map_emerald_block.png"
@@ -91,7 +91,7 @@
          "path" : "textures/blocks/player_popup_tower.png"
       },
       {
-         "path" : "attachables/blue_team_helmet_protection_iI.json"
+         "path" : "attachables/blue_team_helmet_protection_ii.json"
       },
       {
          "path" : "textures/blocks/map_blue_stained_glass.png"
@@ -103,7 +103,7 @@
          "path" : "attachables/blue_team_helmet_protection_iii.json"
       },
       {
-         "path" : "attachables/chainmail_leggings_protection_iI.json"
+         "path" : "attachables/chainmail_leggings_protection_ii.json"
       },
       {
          "path" : "attachables/blue_team_leggings.json"
@@ -121,7 +121,7 @@
          "path" : "attachables/blue_team_leggings_protection_i.json"
       },
       {
-         "path" : "attachables/blue_team_leggings_protection_iI.json"
+         "path" : "attachables/blue_team_leggings_protection_ii.json"
       },
       {
          "path" : "textures/particles/footprint.png"
@@ -133,7 +133,7 @@
          "path" : "attachables/red_team_chestplate_protection_i.json"
       },
       {
-         "path" : "attachables/chainmail_boots_protection_iI.json"
+         "path" : "attachables/chainmail_boots_protection_ii.json"
       },
       {
          "path" : "attachables/chainmail_leggings_protection_i.json"
@@ -154,7 +154,7 @@
          "path" : "attachables/diamond_boots_protection_i.json"
       },
       {
-         "path" : "attachables/diamond_boots_protection_iI.json"
+         "path" : "attachables/diamond_boots_protection_ii.json"
       },
       {
          "path" : "textures/blocks/player_red_wool.png"
@@ -181,7 +181,7 @@
          "path" : "texts/hu_HU.lang"
       },
       {
-         "path" : "attachables/diamond_leggings_protection_iI.json"
+         "path" : "attachables/diamond_leggings_protection_ii.json"
       },
       {
          "path" : "attachables/diamond_leggings_protection_iii.json"
@@ -193,7 +193,7 @@
          "path" : "attachables/green_team_boots_protection_i.json"
       },
       {
-         "path" : "attachables/green_team_boots_protection_iI.json"
+         "path" : "attachables/green_team_boots_protection_ii.json"
       },
       {
          "path" : "models/entity/develop_source/npc_lobby_guide_3.bbmodel"
@@ -211,7 +211,7 @@
          "path" : "attachables/green_team_chestplate_protection_i.json"
       },
       {
-         "path" : "attachables/green_team_chestplate_protection_iI.json"
+         "path" : "attachables/green_team_chestplate_protection_ii.json"
       },
       {
          "path" : "textures/items/potion_bottle_invisibility.png"
@@ -235,7 +235,7 @@
          "path" : "textures/blocks/map_crying_obsidian_block.png"
       },
       {
-         "path" : "attachables/green_team_helmet_protection_iI.json"
+         "path" : "attachables/green_team_helmet_protection_ii.json"
       },
       {
          "path" : "textures/items/yellow_team_boots.png"
@@ -253,7 +253,7 @@
          "path" : "attachables/iron_boots_protection_i.json"
       },
       {
-         "path" : "attachables/iron_boots_protection_iI.json"
+         "path" : "attachables/iron_boots_protection_ii.json"
       },
       {
          "path" : "attachables/iron_leggings_protection_i.json"
@@ -262,7 +262,7 @@
          "path" : "models/entity/npc_lobby_guide_5_enemy.geo.json"
       },
       {
-         "path" : "attachables/iron_leggings_protection_iI.json"
+         "path" : "attachables/iron_leggings_protection_ii.json"
       },
       {
          "path" : "attachables/iron_leggings_protection_iii.json"
@@ -277,7 +277,7 @@
          "path" : "attachables/red_team_boots_protection_i.json"
       },
       {
-         "path" : "attachables/red_team_boots_protection_iI.json"
+         "path" : "attachables/red_team_boots_protection_ii.json"
       },
       {
          "path" : "attachables/red_team_helmet_protection_i.json"
@@ -286,7 +286,7 @@
          "path" : "textures/items/develop_source/yellow_team_leggings.psd"
       },
       {
-         "path" : "attachables/red_team_helmet_protection_iI.json"
+         "path" : "attachables/red_team_helmet_protection_ii.json"
       },
       {
          "path" : "textures/models/armor/develop_source/yellow_team_armor_legs.psd"
@@ -313,7 +313,7 @@
          "path" : "attachables/red_team_leggings_protection_i.json"
       },
       {
-         "path" : "attachables/red_team_leggings_protection_iI.json"
+         "path" : "attachables/red_team_leggings_protection_ii.json"
       },
       {
          "path" : "attachables/red_team_leggings_protection_iii.json"
@@ -328,7 +328,7 @@
          "path" : "attachables/yellow_team_boots_protection_i.json"
       },
       {
-         "path" : "attachables/yellow_team_boots_protection_iI.json"
+         "path" : "attachables/yellow_team_boots_protection_ii.json"
       },
       {
          "path" : "textures/blocks/purchase_green_wool_block.png"
@@ -358,7 +358,7 @@
          "path" : "texts/cs_CZ.lang"
       },
       {
-         "path" : "attachables/yellow_team_chestplate_protection_iI.json"
+         "path" : "attachables/yellow_team_chestplate_protection_ii.json"
       },
       {
          "path" : "texts/sk_SK.lang"
@@ -376,7 +376,7 @@
          "path" : "attachables/yellow_team_helmet_protection_i.json"
       },
       {
-         "path" : "attachables/yellow_team_helmet_protection_iI.json"
+         "path" : "attachables/yellow_team_helmet_protection_ii.json"
       },
       {
          "path" : "attachables/yellow_team_helmet_protection_iii.json"
@@ -394,7 +394,7 @@
          "path" : "attachables/yellow_team_leggings_protection_i.json"
       },
       {
-         "path" : "attachables/yellow_team_leggings_protection_iI.json"
+         "path" : "attachables/yellow_team_leggings_protection_ii.json"
       },
       {
          "path" : "attachables/yellow_team_leggings_protection_iii.json"

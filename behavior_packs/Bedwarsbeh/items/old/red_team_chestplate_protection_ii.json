@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "bedwars:red_team_chestplate_protection_iI",
+			"identifier": "bedwars:red_team_chestplate_protection_ii",
 			// Notice we give it the equipment category
 			"category": "equipment"
 		},
