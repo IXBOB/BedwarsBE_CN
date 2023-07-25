@@ -145,13 +145,13 @@ item.bedwars:menu2_particle_villagerhappy_disabled=§aGreen star §c[require 5 l
 item.bedwars:menu2_particle_villagerhappy_selected=§aGreen star §a[selected]
 item.bedwars:menu3_add_start_players_required=§eAdd 1 required player §7[click / move to select]
 item.bedwars:menu3_remove_start_players_required=§eRemove 1 required player §7[click / move to select]
-item.bedwars:menu3_start_players_2=Minimum players to start the game: §a2
-item.bedwars:menu3_start_players_3=Minimum players to start the game: §a3
-item.bedwars:menu3_start_players_4=Minimum players to start the game: §a4
-item.bedwars:menu3_start_players_5=Minimum players to start the game: §a5
-item.bedwars:menu3_start_players_6=Minimum players to start the game: §a6
-item.bedwars:menu3_start_players_7=Minimum players to start the game: §a7
-item.bedwars:menu3_start_players_8=Minimum players to start the game: §a8
+item.bedwars:menu3_start_players_2=Minimum players to start the game: §a§l2
+item.bedwars:menu3_start_players_3=Minimum players to start the game: §a§l3
+item.bedwars:menu3_start_players_4=Minimum players to start the game: §a§l4
+item.bedwars:menu3_start_players_5=Minimum players to start the game: §a§l5
+item.bedwars:menu3_start_players_6=Minimum players to start the game: §a§l6
+item.bedwars:menu3_start_players_7=Minimum players to start the game: §a§l7
+item.bedwars:menu3_start_players_8=Minimum players to start the game: §a§l8
 item.bedwars:menu3_start_players_reachmax=§cIt is no longer possible to add the required players
 item.bedwars:menu3_start_players_reachmin=§cIt is no longer possible to reduce the required players.
 
@@ -576,6 +576,9 @@ text.tellraw.ingameinfo.draw_line3=§r             no player wins
 text.tellraw.ingameinfo.draw_line4=§r
 text.tellraw.ingameinfo.draw_line5=§f                 Game time: §7
 text.tellraw.ingameinfo.draw_line6=§r
+text.tellraw.ingameinfo.first_killer=     §e§l1st Killer §7
+text.tellraw.ingameinfo.second_killer=     §6§l2nd Killer §7
+text.tellraw.ingameinfo.third_killer=     §c§l3rd Killer §7
 text.tellraw.ingameinfo.reward_summary_line1=§l                Reward Summary       
 text.tellraw.ingameinfo.reward_summary_line2= §r§7You earned 
 text.tellraw.ingameinfo.reward_summary_line3=§r§3   %s  BED WARS experience
@@ -697,9 +700,16 @@ text.sign.lobby.map_3_locked_line2=§r§bDeep Ocean
 text.sign.lobby.map_3_locked_line3=§cPlease change
 text.sign.lobby.map_3_locked_line4=§r§cbefore reset
 
-
-
 ##others
+
+text.actionbar.others.lobby_information_0=§r§fDeveloper mode enabled. Disable: §o/function console/settings/dev/disable
+text.actionbar.others.lobby_information_1=§r§fLevel: §b
+text.actionbar.others.lobby_information_2=    §r§fExp: §b§l
+text.actionbar.others.lobby_information_3=§b / 1000
+text.actionbar.others.lobby_information_4=§r§fCoins: §e§l
+text.actionbar.others.lobby_information_5=§r§fTotal kills: §e§l
+text.actionbar.others.lobby_information_6=§r§fTotal wins: §e§l
+text.actionbar.others.lobby_information_7=   §r§fTotal games: §e§l
 text.tellraw.others.last_game_ended=§c§lYour last game has ended. You have now been teleported back to the lobby.
 text.tellraw.others.level_up_line1=§6§l        ■■■■■ LEVEL UP ■■■■■
 text.tellraw.others.level_up_line2=§r§6You are now at level %s ! congratulations !
