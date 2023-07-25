@@ -71,8 +71,8 @@ scoreboard players reset * "剑等级"
 scoreboard players reset * "镐等级"
 #reset斧等级
 scoreboard players reset * "斧等级"
-#reset防具等级
-scoreboard players reset * "防具等级"
+#reset护甲等级
+scoreboard players reset * "护甲等级"
 #reset红陷阱等级
 scoreboard players reset * "红陷阱等级"
 #reset红保护等级

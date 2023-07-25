@@ -47,8 +47,8 @@ scoreboard players set @a[scores={"分队"=1..4}] "剑等级" 1
 scoreboard players set @a[scores={"分队"=1..4}] "镐等级" 0
 #斧等级 -> 0
 scoreboard players set @a[scores={"分队"=1..4}] "斧等级" 0
-#防具等级 -> 1
-scoreboard players set @a[scores={"分队"=1..4}] "防具等级" 1
+#护甲等级 -> 1
+scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
 #kill经验球
 kill @e[type=xp_orb]
 #红陷阱等级 -> 0

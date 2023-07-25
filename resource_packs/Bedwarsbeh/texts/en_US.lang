@@ -85,29 +85,29 @@ item.snowball.name=Fireball
 item.bedwars:xp_bottle=§aXP Bottle §7100 levels
 item.egg.name=Bridge egg
 item.bedwars:potion_bottle_jump_boost_v=Potion of Leaping §7Jump Boost V (00:30)
-item.bedwars:potion_bottle_invisibility=Potion of invisibility §7Invisibility ii (00:30)
+item.bedwars:potion_bottle_invisibility=Potion of invisibility §7Invisibility II (00:30)
 item.bedwars:wooden_sword=Wooden Sword
 item.bedwars:wooden_sword_sharpness_i=Wooden Sword §7Sharpness I
-item.bedwars:wooden_sword_sharpness_ii=Wooden Sword §7Sharpness ii
-item.bedwars:wooden_sword_sharpness_iii=Wooden Sword §7Sharpness iii
+item.bedwars:wooden_sword_sharpness_ii=Wooden Sword §7Sharpness II
+item.bedwars:wooden_sword_sharpness_iii=Wooden Sword §7Sharpness III
 item.bedwars:wooden_axe=Wooden Axe
 item.bedwars:wooden_pickaxe=Wooden Pickaxe
 item.bedwars:stone_sword=Stone sword
 item.bedwars:stone_sword_sharpness_i=Stone Sword §7Sharpness I
-item.bedwars:stone_sword_sharpness_ii=Stone Sword §7Sharpness ii
-item.bedwars:stone_sword_sharpness_iii=Stone Sword §7Sharpness iii
+item.bedwars:stone_sword_sharpness_ii=Stone Sword §7Sharpness II
+item.bedwars:stone_sword_sharpness_iii=Stone Sword §7Sharpness III
 item.bedwars:stone_axe=Stone Axe
 item.bedwars:stone_pickaxe=Stone Pickaxe
 item.bedwars:iron_sword=Iron sword
 item.bedwars:iron_sword_sharpness_i=Iron Sword §7Sharpness I
-item.bedwars:iron_sword_sharpness_ii=Iron Sword §7Sharpness ii
-item.bedwars:iron_sword_sharpness_iii=Iron Sword §7Sharpness iii
+item.bedwars:iron_sword_sharpness_ii=Iron Sword §7Sharpness II
+item.bedwars:iron_sword_sharpness_iii=Iron Sword §7Sharpness III
 item.bedwars:iron_axe=Iron Axe
 item.bedwars:iron_pickaxe=Iron Pickaxe
 item.bedwars:diamond_sword=Diamond sword
 item.bedwars:diamond_sword_sharpness_i=Diamond Sword §7Sharpness I
-item.bedwars:diamond_sword_sharpness_ii=Diamond Sword §7Sharpness ii
-item.bedwars:diamond_sword_sharpness_iii=Diamond Sword §7Sharpness iii
+item.bedwars:diamond_sword_sharpness_ii=Diamond Sword §7Sharpness II
+item.bedwars:diamond_sword_sharpness_iii=Diamond Sword §7Sharpness III
 item.bedwars:diamond_axe=Diamond Axe
 item.bedwars:diamond_pickaxe=Diamond Pickaxe
 item.bedwars:shears=Shears
@@ -213,7 +213,6 @@ text.tellraw.custom_commands.set_player_count_6_already=§cThe minimum number of
 text.tellraw.custom_commands.set_player_count_7_already=§cThe minimum number of players required to start the game has already been set to 7
 text.tellraw.custom_commands.set_player_count_8_already=§cThe minimum number of players required to start the game has already been set to 8
 
-
 ##wait
 
 text.tellraw.waitinfo.creator_info_line1=§f§lInfo >> §r§7You are running BedwarsBE v1.3.0
@@ -313,7 +312,6 @@ text.scoreboard.waitinfo.start_in_3=§aStart in 3s
 text.scoreboard.waitinfo.start_in_2=§aStart in 2s
 text.scoreboard.waitinfo.start_in_1=§aStart in 1s
 
-
 ##ingame
 
 text.scoreboard.ingameinfo.mode_1=Mode: §7Normal
@@ -321,10 +319,10 @@ text.scoreboard.ingameinfo.mode_2=Mode: §7§oRUSH
 text.scoreboard.ingameinfo.map_1=Map: §7Wooden Boat
 text.scoreboard.ingameinfo.map_2=Map: §7Desert
 text.scoreboard.ingameinfo.map_3=Map: §7Deep Ocean
-text.scoreboard.ingameinfo.mode_1_event_1=§aEmerald ii
-text.scoreboard.ingameinfo.mode_1_event_2=§bDiamond ii
-text.scoreboard.ingameinfo.mode_1_event_3=§aEmerald iii
-text.scoreboard.ingameinfo.mode_1_event_4=§bDiamond iii
+text.scoreboard.ingameinfo.mode_1_event_1=§aEmerald II
+text.scoreboard.ingameinfo.mode_1_event_2=§bDiamond II
+text.scoreboard.ingameinfo.mode_1_event_3=§aEmerald III
+text.scoreboard.ingameinfo.mode_1_event_4=§bDiamond III
 text.scoreboard.ingameinfo.mode_1_event_5=§dObsidian piglin
 text.scoreboard.ingameinfo.mode_1_event_6=§dEnder pearl piglin
 text.scoreboard.ingameinfo.mode_1_event_7=§cBed self-destruct
@@ -453,9 +451,9 @@ text.tellraw.ingameinfo.purchase_bow=§aYou purchased §r§6Bow
 text.tellraw.ingameinfo.purchase_arrow=§aYou purchased §r§6Arrow x8
 text.tellraw.ingameinfo.purchase_bridge_egg=§aYou purchased §r§6Bridge egg
 text.tellraw.ingameinfo.purchase_popup_tower=§aYou purchased §r§6Compact popup_tower
-text.tellraw.ingameinfo.purchase_jump_boost_potion=§aYou purchased §r§6Jump Potion V(45s)
-text.tellraw.ingameinfo.purchase_invisibility_potion=§aYou purchased §r§6Invisibility Potion V(30s)
-text.tellraw.ingameinfo.purchase_xp_bottle=§aYou purchased §r§6XP bottle(100L)
+text.tellraw.ingameinfo.purchase_jump_boost_potion=§aYou purchased §r§6Jump V Potion (45s)
+text.tellraw.ingameinfo.purchase_invisibility_potion=§aYou purchased §r§6Invisibility II Potion (30s)
+text.tellraw.ingameinfo.purchase_xp_bottle=§aYou purchased §r§6XP bottle (100L)
 text.tellraw.ingameinfo.purchase_fireball=§aYou purchased §r§6Fireball
 text.tellraw.ingameinfo.purchase_tnt=§aYou purchased §r§6TNT
 text.tellraw.ingameinfo.purchase_golden_apple=§aYou purchased §r§6Golden apple
@@ -624,9 +622,9 @@ text.sign.ingame.shop_bow=§fBow
 text.sign.ingame.shop_arrow=§f8x Arrow
 text.sign.ingame.shop_bridge_egg=§fBridge Egg
 text.sign.ingame.shop_popup_tower=§fpop-up_tower
-text.sign.ingame.shop_jump_boost_potion=§fJump Potion(45s)
-text.sign.ingame.shop_invisibility_potion=§fInvisibility(30s)
-text.sign.ingame.shop_xp_bottle=§fXp Bottle(100L)
+text.sign.ingame.shop_jump_boost_potion=§fJump Potion (45s)
+text.sign.ingame.shop_invisibility_potion=§fInvisibility (30s)
+text.sign.ingame.shop_xp_bottle=§fXp Bottle (100L)
 text.sign.ingame.shop_fireball=§fFireball
 text.sign.ingame.shop_tnt=§fTNT
 text.sign.ingame.shop_golden_apple=§fGolden Apple
@@ -635,8 +633,8 @@ text.sign.ingame.shop_team_protection=§dteam PROTECTION
 text.sign.ingame.shop_one-time_trap=§done-time TRAP
 
 text.sign.ingame.shop_trap_effect_1=§emining_fatigue I
-text.sign.ingame.shop_trap_effect_2=§emining_fatigue ii
-text.sign.ingame.shop_trap_effect_3=§efatigue ii + blind
+text.sign.ingame.shop_trap_effect_2=§emining_fatigue II
+text.sign.ingame.shop_trap_effect_3=§efatigue II + blind
 
 text.sign.ingame.shop_upgrade_team_level_0_of_3=§7⬜⬜⬜ 0 / 3
 text.sign.ingame.shop_upgrade_team_level_1_of_3=§e⬛§7⬜⬜ 1 / 3
