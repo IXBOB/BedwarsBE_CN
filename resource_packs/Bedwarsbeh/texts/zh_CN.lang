@@ -77,10 +77,10 @@ tile.bedwars:player_green_stained_glass.name=绿色防爆玻璃
 tile.bedwars:player_planks.name=橡木木板
 tile.bedwars:player_endstone.name=末地石
 tile.bedwars:player_obsidian.name=黑曜石
-tile.bedwars:red_popup_tower.name=紧凑型速减防御塔
-tile.bedwars:blue_popup_tower.name=紧凑型速减防御塔
-tile.bedwars:yellow_popup_tower.name=紧凑型速减防御塔
-tile.bedwars:green_popup_tower.name=紧凑型速减防御塔
+tile.bedwars:red_popup_tower.name=紧凑型速建防御塔
+tile.bedwars:blue_popup_tower.name=紧凑型速建防御塔
+tile.bedwars:yellow_popup_tower.name=紧凑型速建防御塔
+tile.bedwars:green_popup_tower.name=紧凑型速建防御塔
 item.snowball.name=火焰弹
 item.bedwars:xp_bottle=§aXP Bottle §7100 经验
 item.egg.name=搭桥蛋
@@ -703,7 +703,7 @@ text.sign.lobby.map_3_locked_line4=§c游戏重置前修改
 ##others
 
 text.actionbar.others.lobby_information_0=§r§f开发者模式已启用， 输入 §o/function console/settings/dev/disable§r§f 以停用
-text.actionbar.others.lobby_information_1=§r§f等级: §b
+text.actionbar.others.lobby_information_1=§r§f等级: §b§l
 text.actionbar.others.lobby_information_2=    §r§f经验: §b§l
 text.actionbar.others.lobby_information_3=§b / 1000
 text.actionbar.others.lobby_information_4=§r§f硬币: §e§l

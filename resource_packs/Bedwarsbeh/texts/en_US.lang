@@ -703,7 +703,7 @@ text.sign.lobby.map_3_locked_line4=§r§cbefore reset
 ##others
 
 text.actionbar.others.lobby_information_0=§r§fDeveloper mode enabled. Disable: §o/function console/settings/dev/disable
-text.actionbar.others.lobby_information_1=§r§fLevel: §b
+text.actionbar.others.lobby_information_1=§r§fLevel: §b§l
 text.actionbar.others.lobby_information_2=    §r§fExp: §b§l
 text.actionbar.others.lobby_information_3=§b / 1000
 text.actionbar.others.lobby_information_4=§r§fCoins: §e§l
