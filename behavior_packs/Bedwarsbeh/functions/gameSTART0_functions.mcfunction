@@ -1,3 +1,5 @@
+#设置游戏规则
+function set_gamerule/set_gamestart0_gamerule
 #tag+sound20
 execute @s[scores={starting=0},tag=!sound20] ~~~ tag @s add sound20
 #tag+sound15
@@ -34,15 +36,15 @@ execute @s[scores={"地图选择"=1,starting=0,reseting=0},tag=!reset_OK] ~~~ st
 execute @s[scores={"地图选择"=2,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_map2_sign -203 200 -197
 execute @s[scores={"地图选择"=3,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_map3_sign -203 200 -197
 #重置结束后后复制地图选择告示牌
-execute @s[scores={reseting=1,"游戏地图"=1,function_tick=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
-execute @s[scores={reseting=1,"游戏地图"=2,function_tick=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
-execute @s[scores={reseting=1,"游戏地图"=3,function_tick=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
-execute @s[scores={starting=1,"游戏地图"=1,function_tick=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
-execute @s[scores={starting=1,"游戏地图"=2,function_tick=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
-execute @s[scores={starting=1,"游戏地图"=3,function_tick=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=1,function_tick=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=2,function_tick=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=3,function_tick=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[scores={reseting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
+execute @s[scores={reseting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
+execute @s[scores={reseting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[scores={starting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
+execute @s[scores={starting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
+execute @s[scores={starting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
 #检测按下按钮更换模式
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ scoreboard players add @e[scores={starting=0,reseting=0},tag=!reset_OK] "游戏模式" 1
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=!op] ~~~ tellraw @s { "rawtext" : [ {"translate":"text.tellraw.waitinfo.change_mode_denied"} ] }
@@ -77,11 +79,11 @@ execute @s[tag=set.start.players.8,tag=!set.players.8.tellrawed] ~~~ function co
 #游戏结束时大厅actionbar
 execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ execute @a ~~~ function lobby_actionbar
 #等待玩家时设置显示计分板
-execute @s[type=armor_stand,name=main,scores={function_tick=20}] ~~~ function set_gameSTART0_waiting_scoreboard
+execute @s[type=armor_stand,name=main,scores={function_tick_20=20}] ~~~ function set_gameSTART0_waiting_scoreboard
 #删除玩家观战tag
-execute @s[type=armor_stand,name=main,scores={function_tick=20}] ~~~ tag * remove from_lobby_spectator
+execute @s[type=armor_stand,name=main,scores={function_tick_20=20}] ~~~ tag * remove from_lobby_spectator
 #设置计分板游戏倒计时
-execute @s[type=armor_stand,scores={starting=1,function_tick=20,"开始倒计时"=0..20},tag=reset_OK] ~~~ function refresh_starting_scoreboard
+execute @s[type=armor_stand,scores={starting=1,function_tick_20=20,"开始倒计时"=0..20},tag=reset_OK] ~~~ function refresh_starting_scoreboard
 execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ scoreboard players reset text.scoreboard.waitinfo.preparing "显示"
 #设置starting值
 function set.game.starting
@@ -104,6 +106,14 @@ execute @s[scores={starting=1,"开始倒计时"=-1}] ~~~ function gamestart_rese
 #更改游戏模式
 gamemode 2 @a[tag=!insider]
 #游戏开始倒计时
-execute @s[scores={starting=1,"开始倒计时"=0..20,function_tick=20},tag=reset_OK] ~~~ function startgame_timer
+execute @s[scores={starting=1,"开始倒计时"=0..20,function_tick_20=20},tag=reset_OK] ~~~ function startgame_timer
 #开始倒计时-1
-scoreboard players add @s[scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] "开始倒计时" -1
+scoreboard players add @s[scores={starting=1,"开始倒计时"=0..,function_tick_20=20},tag=reset_OK] "开始倒计时" -1
+#重置结束后后复制游戏模式告示牌
+#复制大厅不可选择告示牌
+execute @s[scores={reseting=1,"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197
+execute @s[scores={reseting=1,"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -197
+execute @s[scores={starting=1,"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197
+execute @s[scores={starting=1,"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -197
+execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197
+execute @s[tag=reset_OK,scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -197

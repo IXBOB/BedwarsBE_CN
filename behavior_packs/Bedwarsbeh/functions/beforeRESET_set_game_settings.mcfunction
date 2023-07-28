@@ -17,14 +17,6 @@ scoreboard players set @a "分队" 0
 scoreboard players reset @e[type=armor_stand,name=main] "开始倒计时"
 #starting -> 0
 scoreboard players set @e[type=armor_stand,name=main] starting 0
-#reset红床有敌
-scoreboard players reset * "红床有敌"
-#reset蓝床有敌
-scoreboard players reset * "蓝床有敌"
-#reset黄床有敌
-scoreboard players reset * "黄床有敌"
-#reset绿床有敌
-scoreboard players reset * "绿床有敌"
 #reset红床存活
 scoreboard players reset * "红床存活"
 #reset蓝床存活

@@ -1,4 +1,4 @@
-execute @s[scores={"游戏模式"=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_6 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=6,function_tick_20=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_6 "显示" -1
 execute @s[scores={gameSTART=1,"显示事件"=5,"事件倒计时"=126}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_6 "显示" 120
 execute @s[scores={gameSTART=1,"显示事件"=5,"事件倒计时"=126}] ~~~ scoreboard players set @s "显示事件" 6
 execute @s[scores={gameSTART=1,"显示事件"=6,"事件倒计时"=126}] ~~~ scoreboard players set @s "事件倒计时" 120

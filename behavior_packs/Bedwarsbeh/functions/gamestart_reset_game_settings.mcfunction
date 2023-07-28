@@ -12,6 +12,8 @@ tp @a[scores={"分队"=3}] 53 186 0 facing 0 182 0
 tp @a[scores={"分队"=4}] -53 186 0 facing 0 182 0
 #设置生存
 gamemode 0 @a[scores={"分队"=1..4}]
+#清空玩家末影箱
+execute @a ~~~ function clear_ender_chest
 #倒计时0title.times
 title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title

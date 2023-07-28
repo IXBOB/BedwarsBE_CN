@@ -1,4 +1,5 @@
-
+#设置游戏规则
+function set_gamerule/set_gamestart1_gamerule
 #检测大厅有游戏内玩家移出游戏
 tag @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ add unexpected_return_to_lobby
 execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
@@ -41,7 +42,7 @@ function test_win
 #大厅actionbar
 execute @a[x=-218,y=193,z=-218,r=50] ~~~ function lobby_actionbar
 #玩家隐身
-execute @s[scores={function_tick=20}] ~~~ execute @e[type=player,scores={invisible_time=1..}] ~~~ function invisible_time
+execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={invisible_time=1..}] ~~~ function invisible_time
 #检测队伍剩余人数并显示
 function scoreboard_team_display/test/red_player_count
 function scoreboard_team_display/test/blue_player_count
@@ -75,11 +76,11 @@ execute @a[scores={"分队"=4,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126]
 #淘汰后玩家actionbar
 titleraw @a[rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1,"存活"=!1}] actionbar { "rawtext" : [{"translate":"text.actionbar.ingameinfo.spectator_information_line1"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line2"},{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line3"},{"selector":"@a[scores={分队=1,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line4"},{"selector":"@a[scores={分队=2,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line5"},{"selector":"@a[scores={分队=3,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line6"},{"selector":"@a[scores={分队=4,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line7"} ] }
 #删除背包
-execute @s[scores={function_tick=20}] ~~~ clear @a[scores={"出局观战"=1,respawning=0}]
+execute @s[scores={function_tick_20=20}] ~~~ clear @a[scores={"出局观战"=1,respawning=0}]
 #设置重生点
 spawnpoint @a[scores={"分队"=1..4}] 0 210 0
 #增加并计算游戏时间
-execute @s[scores={function_tick=20}] ~~~ function add_and_calculate_game_time
+execute @s[scores={function_tick_20=20}] ~~~ function add_and_calculate_game_time
 #抬头返回功能
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ function headup_back_to_lobby
@@ -107,7 +108,7 @@ execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players se
 execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
 scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
 #事件倒计时-1
-scoreboard players add @s[scores={"显示事件"=1..8,function_tick=20}] "事件倒计时" -1
+scoreboard players add @s[scores={"显示事件"=1..8,function_tick_20=20}] "事件倒计时" -1
 #事件1
 execute @s[scores={"显示事件"=1}] ~~~ function events/choose_execute_event_1
 #事件2
@@ -129,15 +130,35 @@ execute @s[scores={"显示事件"=8}] ~~~ function events/event_8
 function test_game_uid/test_game_uid
 #删除不合规物品
 function delete_non-compliant_item_and_entity
-#<红> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "红床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!1},x=0,y=185,z=46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床有敌" 1
-#<蓝> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "蓝床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!2},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
-#<黄> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "黄床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!3},x=46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "黄床有敌" 1
-#<绿> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "绿床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!4},x=-46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿床有敌" 1
+#给掉入虚空的玩家添加kill tag
+execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
+#删除掉入虚空的玩家
+execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
+#复制告示牌游戏已开始
+execute @s[scores={function_tick_20=20}] ~~~ structure load bedwars:lobby_click_watch_sign -200 200 -204
+execute @s[scores={function_tick_20=20}] ~~~ setblock -200 201 -205 polished_blackstone_button 1
+#检测游戏开始时按钮被按下并重置按钮(观战)
+execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 gamemode spectator @e[type=player,x=-200,y=201,z=-205,r=3,c=1]
+execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 scoreboard players set @e[type=player,x=-200,y=201,z=-205,r=3,c=1] "存活" 0
+execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 tag @e[type=player,x=-200,y=201,z=-205,r=3,c=1] add from_lobby_spectator
+execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 scoreboard players set @e[type=player,x=-200,y=201,z=-205,r=3,c=1] "出局观战" 1
+execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 tp @e[type=player,x=-200,y=201,z=-205,r=3,c=1] 0 206 0
+execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 setblock -200 201 -205 polished_blackstone_button 1
+#重置结束后后复制地图选择告示牌
+#复制大厅不可选择告示牌
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+#重置结束后后复制游戏模式告示牌
+#复制大厅不可选择告示牌
+execute @s[scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197
+execute @s[scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -197
+#游戏区域tag+degrade
+execute @a[scores={"分队"=1..4,"出局观战"=0},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ tag @s add degrade
+#游戏开始时自动获取经验和硬币
+execute @s[scores={function_tick_20=20,fc_tick_cycle=10}] ~~~ function add_xp_and_coin_game
+#检测触发陷阱
+execute @s[scores={"红陷阱等级"=1..3}] ~~~ function test_red_team_trap_triggered
+execute @s[scores={"蓝陷阱等级"=1..3}] ~~~ function test_blue_team_trap_triggered
+execute @s[scores={"黄陷阱等级"=1..3}] ~~~ function test_yellow_team_trap_triggered
+execute @s[scores={"绿陷阱等级"=1..3}] ~~~ function test_green_team_trap_triggered
