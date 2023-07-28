@@ -110,7 +110,7 @@ item.bedwars:diamond_sword_sharpness_ii=钻石剑 §7锋利 II
 item.bedwars:diamond_sword_sharpness_iii=钻石剑 §7锋利 III
 item.bedwars:diamond_axe=钻石斧
 item.bedwars:diamond_pickaxe=钻石镐
-item.bedwars:shears=剪刀
+
 item.bedwars:red_team_helmet=红队皮革帽子
 item.bedwars:red_team_chestplate=红队皮革胸甲
 item.bedwars:red_team_leggings=红队皮革裤子
@@ -323,7 +323,7 @@ text.scoreboard.ingameinfo.mode_1_event_1=§a绿宝石生成点 II 级
 text.scoreboard.ingameinfo.mode_1_event_2=§b钻石生成点 II 级
 text.scoreboard.ingameinfo.mode_1_event_3=§a绿宝石生成点 III 级
 text.scoreboard.ingameinfo.mode_1_event_4=§b钻石生成点 III 级
-text.scoreboard.ingameinfo.mode_1_event_5=§d黑曜猪灵
+text.scoreboard.ingameinfo.mode_1_event_5=§d黑曜石猪灵
 text.scoreboard.ingameinfo.mode_1_event_6=§d末影珍珠猪灵
 text.scoreboard.ingameinfo.mode_1_event_7=§c床自毁
 text.scoreboard.ingameinfo.mode_1_event_8=§e游戏平局

@@ -18,28 +18,16 @@ execute @a[x=-218,y=193,z=-218,r=50] ~~~ function lobby_actionbar
 #胜利烟花
 execute @s[scores={function_tick=10}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 execute @s[scores={function_tick=20}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
-#火焰弹出界删除
-execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 particle minecraft:dragon_death_explosion_emitter ~~~
-execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #更改游戏模式
 gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
-#删除disabled_content
-kill @e[type=item,name=disabled_content]
 #删除背包
 clear @a[scores={"出局观战"=1,respawning=0}]
-#删除屏障上的僵尸猪人
-execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
-#删除屏障上的掉落物
-execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
 #设置重生点
 spawnpoint @a[scores={"分队"=1..4}] 0 210 0
 #抬头返回功能
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ function headup_back_to_lobby
-#删除背包内的铁锭，金锭，钻石，绿宝石
-clear @a iron_ingot
-clear @a gold_ingot
-clear @a diamond
-clear @a emerald
 #检测玩家是否中途退出再加入了下一局
 function test_game_uid/test_game_uid
+#删除不合规物品
+function delete_non-compliant_item_and_entity

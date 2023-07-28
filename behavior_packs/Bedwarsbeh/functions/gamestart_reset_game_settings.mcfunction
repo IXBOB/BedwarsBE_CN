@@ -56,6 +56,8 @@ scoreboard players set @a[scores={"分队"=1..4}] "斧等级" 0
 scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
 #kill经验球
 kill @e[type=xp_orb]
+#删除僵尸猪人
+event entity @e[type=minecraft:zombie_pigman] bedwars:remove_self
 #红陷阱等级 -> 0
 scoreboard players set @s "红陷阱等级" 0
 #红保护等级 -> 0

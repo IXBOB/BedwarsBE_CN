@@ -125,12 +125,12 @@ scoreboard players set @e[type=armor_stand,name=main] "显示事件" 0
 gamemode 2 @a
 #设置重生点为大厅
 spawnpoint @a -200 200 -200
-#关闭pvp
-gamerule pvp false
 #kill.item
 kill @e[type=item]
 #kill经验球
 kill @e[type=xp_orb]
+#删除僵尸猪人
+event entity @e[type=zombie_pigman] bedwars:remove_self
 #设置难度为简单
 difficulty easy
 #tag+sound20

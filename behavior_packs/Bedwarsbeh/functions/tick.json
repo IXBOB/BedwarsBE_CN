@@ -3,7 +3,7 @@
       "on_join",
       "function_tick/function_tick",
       "function_tick/function_tick_5",
-      "game_repeat",
+      "assign_repeat_for_tickjson",
       "RandomDamageUID"
     ]
 }

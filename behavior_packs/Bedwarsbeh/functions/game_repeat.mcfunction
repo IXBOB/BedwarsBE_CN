@@ -1,77 +1,34 @@
 #gamerule相关================
-#游戏没开始关闭掉落伤害
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ gamerule falldamage false
-#游戏开始打开掉落伤害
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ gamerule falldamage true
-#游戏结算关闭掉落伤害
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ gamerule falldamage false
-#pvp false
-execute @e[type=armor_stand,name=main,scores={gameSTART=!1}] ~~~ gamerule pvp false
-#pvp true
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamerule pvp true
-#设置游戏规则
-execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ function set_gamerule
+execute @s[scores={gameSTART=0}] ~~~ function set_gamerule/set_gamestart0_gamerule
+execute @s[scores={gameSTART=1}] ~~~ function set_gamerule/set_gamestart1_gamerule
+execute @s[scores={gameSTART=2}] ~~~ function set_gamerule/set_gamestart2_gamerule
+function set_gamerule/set_repeat_gamerule
 #gamerule相关结束================
+
+execute @s[scores={gameSTART=0}] ~~~ function gameSTART0_functions
+execute @s[scores={gameSTART=1}] ~~~ function gameSTART1_functions
+execute @s[scores={gameSTART=2}] ~~~ function gameSTART2_functions
+execute @s[scores={gameSTART=1..2}] ~~~ function gameSTART1_and_2_functions
+
 
 #删除盔甲架主手物品
 replaceitem entity @e[type=armor_stand] slot.weapon.mainhand 0 air
 
-#删除出界的箭
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=arrow] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
-#删除出界的末影珍珠
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl] ~~~ detect ~ 0 ~ deny 0 kill @s
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl,x=-63,y=90,z=-63,dx=127,dy=83,dz=127] ~~~ kill @s
-
 #大厅跳到结构空位TP出生点
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
 
-#检测大厅有游戏内玩家移出游戏
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ tag @s add unexpected_return_to_lobby
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
-
 #所有玩家饱和
 effect @a saturation 2 255 true
-#开始游戏后大厅玩家虚弱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,z=-218,r=50] weakness 2 255 true
-#开始游戏后大厅玩家抗性提升
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,z=-218,r=50] resistance 2 255 true
 
-#游戏开始后还原被破坏的红队伍箱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 58 air 0 structure load bedwars:red_team_chest 0 185 58
-#游戏开始后还原被破坏的蓝队伍箱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 -58 air 0 structure load bedwars:blue_team_chest 0 185 -58
-#游戏开始后还原被破坏的黄队伍箱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 58 185 0 air 0 structure load bedwars:yellow_team_chest 58 185 0
-#游戏开始后还原被破坏的绿队伍箱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect -58 185 0 air 0 structure load bedwars:green_team_chest -58 185 0
-
-#<红> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "红床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!1},x=0,y=185,z=46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床有敌" 1
-#<蓝> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "蓝床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!2},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
-#<黄> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "黄床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!3},x=46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "黄床有敌" 1
-#<绿> 检测有敌人可以破坏床
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "绿床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!4},x=-46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿床有敌" 1
-
-#gameSTART为0时执行命令
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ function gameSTART0_functions
-#gameSTART为2时执行命令
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ function gameSTART2_functions
 #给掉入虚空的玩家添加kill tag
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
 #删除掉入虚空的玩家
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
 
 #初始化新玩家
 execute @a[tag=!registered] ~~~ function player_register
 
-#运行gameSTART1_functions
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function gameSTART1_functions
+
 
 #复制gameSTART给玩家
 scoreboard players operation @a gameSTART = @e[type=armor_stand,name=main] gameSTART

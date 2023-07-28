@@ -16,8 +16,6 @@ execute @s[scores={starting=0},tag=!sound2] ~~~ tag @s add sound2
 execute @s[scores={starting=0},tag=!sound1] ~~~ tag @s add sound1
 #设置倒计时时间
 execute @s[scores={starting=0}] ~~~ scoreboard players set @s "开始倒计时" 20
-#gameSTART=0删除僵尸猪人
-kill @e[type=minecraft:zombie_pigman]
 #重置地图
 function reset_map
 #游戏未开始传送游戏区玩家到大厅
@@ -26,7 +24,7 @@ execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ tp @s[tag=!insider] -200 2
 execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ xp -99999L @s
 execute @a[x=-63,y=92,z=-63,dx=127,dy=120,dz=127] ~~~ clear @s[tag=!insider]
 #游戏未开始时删除僵尸猪人
-execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
+execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 event entity @s bedwars:remove_self
 #gamestart=0,复制告示牌游戏未开始
 structure load bedwars:lobby_wait_start_sign -200 200 -204
 setblock -200 201 -205 air

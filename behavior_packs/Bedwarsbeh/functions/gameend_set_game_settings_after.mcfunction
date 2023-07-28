@@ -10,8 +10,6 @@ scoreboard players set @e[type=armor_stand,name=main] gameSTART 0
 gamemode 2 @a
 #spawnpoint
 spawnpoint @a -200 200 -200
-#pvp false
-gamerule pvp false
 #reset firework
 scoreboard players reset * firework
 #reset显示

@@ -1,3 +1,7 @@
+
+#检测大厅有游戏内玩家移出游戏
+tag @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ add unexpected_return_to_lobby
+execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
 #设置near_diamond
 tag @a remove near_diamond
 execute @e[type=player,x=-40,y=186,z=-40,r=7] ~~~ tag @s add near_diamond
@@ -57,14 +61,9 @@ execute @s[scores={"黄床存活"=1}] ~~~ scoreboard players set @e[type=player,
 #绿床存在将蓝非挂机玩家存活设1
 execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=4}] "存活" 0
 execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=4}] "存活" 1
-#火焰弹出界删除
-execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 particle minecraft:dragon_death_explosion_emitter ~~~
-execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #更改游戏模式
 gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,respawning=0,able_to_respawn=1},tag=!insider]
 gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
-#删除disabled_content
-kill @e[type=item,name=disabled_content]
 #红队队伍actionbar
 execute @a[scores={"分队"=1,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{"translate":"text.actionbar.ingameinfo.information_line1_red"},{ "text" : "\n" },{"translate":"text.actionbar.ingameinfo.information_line2_red"},{ "selector" :  "@a[scores={分队=1,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.information_line3"},{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.information_line4"},{"score":{"name":"@s","objective":"击杀数"}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"text":"\n"}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"translate":"text.actionbar.ingameinfo.information_line5_diamond_1"},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"translate":"text.actionbar.ingameinfo.information_line5_diamond_2"},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"text":"\n"}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"translate":"text.actionbar.ingameinfo.information_line5_emerald_1"},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"translate":"text.actionbar.ingameinfo.information_line5_diamond_2"},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}}]}}]}
 #蓝队队伍actionbar
@@ -77,10 +76,6 @@ execute @a[scores={"分队"=4,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126]
 titleraw @a[rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1,"存活"=!1}] actionbar { "rawtext" : [{"translate":"text.actionbar.ingameinfo.spectator_information_line1"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line2"},{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line3"},{"selector":"@a[scores={分队=1,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line4"},{"selector":"@a[scores={分队=2,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line5"},{"selector":"@a[scores={分队=3,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line6"},{"selector":"@a[scores={分队=4,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line7"} ] }
 #删除背包
 execute @s[scores={function_tick=20}] ~~~ clear @a[scores={"出局观战"=1,respawning=0}]
-#删除屏障上的僵尸猪人
-execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
-#删除屏障上的掉落物
-execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
 #设置重生点
 spawnpoint @a[scores={"分队"=1..4}] 0 210 0
 #增加并计算游戏时间
@@ -130,10 +125,19 @@ execute @s[scores={"显示事件"=7}] ~~~ function events/event_7
 #事件8
 execute @s[scores={"显示事件"=8}] ~~~ function events/event_8
 #事件相关结束================
-#删除背包内的铁锭，金锭，钻石，绿宝石
-clear @a iron_ingot
-clear @a gold_ingot
-clear @a diamond
-clear @a emerald
 #检测玩家是否中途退出再加入了下一局
 function test_game_uid/test_game_uid
+#删除不合规物品
+function delete_non-compliant_item_and_entity
+#<红> 检测有敌人可以破坏床
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "红床有敌" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!1},x=0,y=185,z=46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床有敌" 1
+#<蓝> 检测有敌人可以破坏床
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "蓝床有敌" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!2},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
+#<黄> 检测有敌人可以破坏床
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "黄床有敌" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!3},x=46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "黄床有敌" 1
+#<绿> 检测有敌人可以破坏床
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "绿床有敌" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!4},x=-46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿床有敌" 1
