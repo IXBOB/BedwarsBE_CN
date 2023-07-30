@@ -52,16 +52,6 @@ execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1,menu_page=
 #menu_page3
 execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
 
-#menu2-particle_purchase_none
-execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1},tag=particle_purchase_none] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_none
-#menu2-particle_purchase_villagerhappy
-execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1},tag=particle_purchase_villagerhappy] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_villagerhappy
-#menu2-particle_purchase_fire
-execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1},tag=particle_purchase_fire] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_fire
-
-#非tag op玩家进入管理员菜单自动返回
-execute @a[tag=!op,scores={menu_page=3}] ~~~ function inventory_menu/change_to_menu/change_to_menu1
-
 #粒子显示
 execute @s[scores={function_tick_20=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
 execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
