@@ -1,7 +1,7 @@
 #设置游戏规则
 function set_gamerule/set_gamestart1_gamerule
 #检测大厅有游戏内玩家移出游戏
-tag @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ add unexpected_return_to_lobby
+tag @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] add unexpected_return_to_lobby
 execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
 #设置near_diamond
 tag @a remove near_diamond

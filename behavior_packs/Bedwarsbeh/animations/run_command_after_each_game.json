@@ -42,7 +42,7 @@
 					//tellraw即将重置
 					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_15\"} ] }",
 					//change to menu1
-					"/tag @a add change_to_menu1"
+					"/execute @a ~~~ function inventory_menu/change_to_menu/change_to_menu1"
 				],
 				"18.8": [
 					//tellraw即将重置

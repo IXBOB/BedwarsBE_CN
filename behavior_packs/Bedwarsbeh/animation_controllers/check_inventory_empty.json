@@ -1,100 +1,101 @@
 {
 	"format_version": "1.17.30",
 	"animation_controllers": {
-		"controller.animation.bedwars.health_display": { //玩家血量计入计分板
+		"controller.animation.bedwars.check_inventory_empty": {
 			"states": {
 				"default": {
 					"transitions": [
 						{
-							"empty0": "query.is_item_name_any('slot.inventory', 0, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty0": "query.is_item_name_any('slot.inventory', 0, 'empty') == 1.0"
 						},
 						{
-							"empty1": "query.is_item_name_any('slot.inventory', 1, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty1": "query.is_item_name_any('slot.inventory', 1, 'empty') == 1.0"
 						},
 						{
-							"empty2": "query.is_item_name_any('slot.inventory', 2, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty2": "query.is_item_name_any('slot.inventory', 2, 'empty') == 1.0"
 						},
 						{
-							"empty3": "query.is_item_name_any('slot.inventory', 3, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty3": "query.is_item_name_any('slot.inventory', 3, 'empty') == 1.0"
 						},
 						{
-							"empty4": "query.is_item_name_any('slot.inventory', 4, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty4": "query.is_item_name_any('slot.inventory', 4, 'empty') == 1.0"
 						},
 						{
-							"empty5": "query.is_item_name_any('slot.inventory', 5, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty5": "query.is_item_name_any('slot.inventory', 5, 'empty') == 1.0"
 						},
 						{
-							"empty6": "query.is_item_name_any('slot.inventory', 6, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty6": "query.is_item_name_any('slot.inventory', 6, 'empty') == 1.0"
 						},
 						{
-							"empty7": "query.is_item_name_any('slot.inventory', 7, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty7": "query.is_item_name_any('slot.inventory', 7, 'empty') == 1.0"
 						},
 						{
-							"empty8": "query.is_item_name_any('slot.inventory', 8, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty8": "query.is_item_name_any('slot.inventory', 8, 'empty') == 1.0"
 						},
 						{
-							"empty9": "query.is_item_name_any('slot.inventory', 9, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty9": "query.is_item_name_any('slot.inventory', 9, 'empty') == 1.0"
 						},
 						{
-							"empty10": "query.is_item_name_any('slot.inventory', 10, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty10": "query.is_item_name_any('slot.inventory', 10, 'empty') == 1.0"
 						},
 						{
-							"empty11": "query.is_item_name_any('slot.inventory', 11, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty11": "query.is_item_name_any('slot.inventory', 11, 'empty') == 1.0"
 						},
 						{
-							"empty12": "query.is_item_name_any('slot.inventory', 12, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty12": "query.is_item_name_any('slot.inventory', 12, 'empty') == 1.0"
 						},
 						{
-							"empty13": "query.is_item_name_any('slot.inventory', 13, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty13": "query.is_item_name_any('slot.inventory', 13, 'empty') == 1.0"
 						},
 						{
-							"empty14": "query.is_item_name_any('slot.inventory', 14, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty14": "query.is_item_name_any('slot.inventory', 14, 'empty') == 1.0"
 						},
 						{
-							"empty15": "query.is_item_name_any('slot.inventory', 15, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty15": "query.is_item_name_any('slot.inventory', 15, 'empty') == 1.0"
 						},
 						{
-							"empty16": "query.is_item_name_any('slot.inventory', 16, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty16": "query.is_item_name_any('slot.inventory', 16, 'empty') == 1.0"
 						},
 						{
-							"empty17": "query.is_item_name_any('slot.inventory', 17, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty17": "query.is_item_name_any('slot.inventory', 17, 'empty') == 1.0"
 						},
 						{
-							"empty18": "query.is_item_name_any('slot.inventory', 18, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty18": "query.is_item_name_any('slot.inventory', 18, 'empty') == 1.0"
 						},
 						{
-							"empty19": "query.is_item_name_any('slot.inventory', 19, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty19": "query.is_item_name_any('slot.inventory', 19, 'empty') == 1.0"
 						},
 						{
-							"empty20": "query.is_item_name_any('slot.inventory', 20, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty20": "query.is_item_name_any('slot.inventory', 20, 'empty') == 1.0"
 						},
 						{
-							"empty21": "query.is_item_name_any('slot.inventory', 21, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty21": "query.is_item_name_any('slot.inventory', 21, 'empty') == 1.0"
 						},
 						{
-							"empty22": "query.is_item_name_any('slot.inventory', 22, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty22": "query.is_item_name_any('slot.inventory', 22, 'empty') == 1.0"
 						},
 						{
-							"empty23": "query.is_item_name_any('slot.inventory', 23, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty23": "query.is_item_name_any('slot.inventory', 23, 'empty') == 1.0"
 						},
 						{
-							"empty24": "query.is_item_name_any('slot.inventory', 24, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty24": "query.is_item_name_any('slot.inventory', 24, 'empty') == 1.0"
 						},
 						{
-							"empty25": "query.is_item_name_any('slot.inventory', 25, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty25": "query.is_item_name_any('slot.inventory', 25, 'empty') == 1.0"
 						},
 						{
-							"empty26": "query.is_item_name_any('slot.inventory', 26, 'bedwars:inventory_menu_empty') == 0.0"
+							"empty26": "query.is_item_name_any('slot.inventory', 26, 'empty') == 1.0"
 						}
 					]
 				},
 				"empty0": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 0, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 0, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory0_menu_empty"
 					],
 					"on_exit": [
@@ -104,10 +105,11 @@
 				"empty1": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 1, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 1, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory1_menu_empty"
 					],
 					"on_exit": [
@@ -117,10 +119,11 @@
 				"empty2": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 2, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 2, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory2_menu_empty"
 					],
 					"on_exit": [
@@ -130,10 +133,11 @@
 				"empty3": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 3, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 3, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory3_menu_empty"
 					],
 					"on_exit": [
@@ -143,10 +147,11 @@
 				"empty4": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 4, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 4, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory4_menu_empty"
 					],
 					"on_exit": [
@@ -156,10 +161,11 @@
 				"empty5": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 5, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 5, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory5_menu_empty"
 					],
 					"on_exit": [
@@ -169,10 +175,11 @@
 				"empty6": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 6, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 6, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory6_menu_empty"
 					],
 					"on_exit": [
@@ -182,10 +189,11 @@
 				"empty7": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 7, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 7, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory7_menu_empty"
 					],
 					"on_exit": [
@@ -195,10 +203,11 @@
 				"empty8": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 8, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 8, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory8_menu_empty"
 					],
 					"on_exit": [
@@ -208,10 +217,11 @@
 				"empty9": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 9, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 9, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory9_menu_empty"
 					],
 					"on_exit": [
@@ -221,10 +231,11 @@
 				"empty10": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 10, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 10, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory10_menu_empty"
 					],
 					"on_exit": [
@@ -234,10 +245,11 @@
 				"empty11": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 11, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 11, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory11_menu_empty"
 					],
 					"on_exit": [
@@ -247,10 +259,11 @@
 				"empty12": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 12, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 12, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory12_menu_empty"
 					],
 					"on_exit": [
@@ -260,10 +273,11 @@
 				"empty13": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 13, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 13, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory13_menu_empty"
 					],
 					"on_exit": [
@@ -273,10 +287,11 @@
 				"empty14": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 14, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 14, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory14_menu_empty"
 					],
 					"on_exit": [
@@ -286,10 +301,11 @@
 				"empty15": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 15, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 15, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory15_menu_empty"
 					],
 					"on_exit": [
@@ -299,10 +315,11 @@
 				"empty16": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 16, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 16, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory16_menu_empty"
 					],
 					"on_exit": [
@@ -312,10 +329,11 @@
 				"empty17": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 17, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 17, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory17_menu_empty"
 					],
 					"on_exit": [
@@ -325,10 +343,11 @@
 				"empty18": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 18, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 18, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory18_menu_empty"
 					],
 					"on_exit": [
@@ -338,10 +357,11 @@
 				"empty19": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 19, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 19, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory19_menu_empty"
 					],
 					"on_exit": [
@@ -351,10 +371,11 @@
 				"empty20": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 20, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 20, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory20_menu_empty"
 					],
 					"on_exit": [
@@ -364,10 +385,11 @@
 				"empty21": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 21, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 21, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory21_menu_empty"
 					],
 					"on_exit": [
@@ -377,10 +399,11 @@
 				"empty22": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 22, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 22, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory22_menu_empty"
 					],
 					"on_exit": [
@@ -390,10 +413,11 @@
 				"empty23": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 23, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 23, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory23_menu_empty"
 					],
 					"on_exit": [
@@ -403,10 +427,11 @@
 				"empty24": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 24, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 24, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory24_menu_empty"
 					],
 					"on_exit": [
@@ -416,10 +441,11 @@
 				"empty25": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 25, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 25, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory25_menu_empty"
 					],
 					"on_exit": [
@@ -429,10 +455,11 @@
 				"empty26": {
 					"transitions": [
 						{
-							"default": "query.is_item_name_any('slot.inventory', 26, 'bedwars:inventory_menu_empty') != 0"
+							"default": "query.is_item_name_any('slot.inventory', 26, 'empty') != 1.0"
 						}
 					],
 					"on_entry": [
+"/say 1",
 						"/tag @s add inventory26_menu_empty"
 					],
 					"on_exit": [

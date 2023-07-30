@@ -10,11 +10,13 @@
         "animate": [
           "test_death",
           "health_display"
+//          "check_inventory_empty"
         ]
       },
       "animations": {
         "test_death": "controller.animation.bedwars.test_death",
         "health_display": "controller.animation.bedwars.health_display"
+//        "check_inventory_empty": "controller.animation.bedwars.check_inventory_empty"
       }
     },
     "component_groups": {

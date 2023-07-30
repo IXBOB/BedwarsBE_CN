@@ -20,10 +20,10 @@ execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -20
 effect @a saturation 2 255 true
 
 #复制gameSTART给玩家
-scoreboard players operation @a gameSTART = @e[type=armor_stand,name=main] gameSTART
+scoreboard players operation @a gameSTART = @s gameSTART
 
 #初始化重复检测大厅人数
-scoreboard players reset * "大厅人数"
+scoreboard players reset @s "大厅人数"
 
 #玩家被夺去tag=op时提示
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ function on_get_op
@@ -46,44 +46,21 @@ scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
 
 #PARTICLE_menu
 #menu_page1
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
+execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
 #menu_page2
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2}] ~~~ function inventory_menu/menu_page/menu_page2
+execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1,menu_page=2}] ~~~ function inventory_menu/menu_page/menu_page2
 #menu_page3
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
-
-#change_to_menu1
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=change_to_menu1] ~~~ function inventory_menu/change_to_menu/change_to_menu1
-#change_to_menu2
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=change_to_menu2] ~~~ function inventory_menu/change_to_menu/change_to_menu2
-#change_to_menu3
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=change_to_menu3] ~~~ function inventory_menu/change_to_menu/change_to_menu3
+execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
 
 #menu2-particle_purchase_none
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_purchase_none] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_none
+execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1},tag=particle_purchase_none] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_none
 #menu2-particle_purchase_villagerhappy
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_purchase_villagerhappy] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_villagerhappy
+execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1},tag=particle_purchase_villagerhappy] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_villagerhappy
 #menu2-particle_purchase_fire
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_purchase_fire] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_fire
-
-#menu3-remove_start_players_required
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=remove_start_players_required] ~~~ function inventory_menu/menu3-change_start_players_required/remove_players
-#menu3-add_start_players_required
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0},tag=add_start_players_required] ~~~ function inventory_menu/menu3-change_start_players_required/add_players
+execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1},tag=particle_purchase_fire] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_fire
 
 #非tag op玩家进入管理员菜单自动返回
-execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
-
-#refresh_menu1
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1},tag=refresh_menu1] ~~~ function inventory_menu/refresh_menu/refresh_menu1
-#refresh_menu2
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2},tag=refresh_menu2] ~~~ function inventory_menu/refresh_menu/refresh_menu2
-#refresh_menu3
-execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3},tag=refresh_menu3] ~~~ function inventory_menu/refresh_menu/refresh_menu3
-
-#非tag op玩家进入管理员菜单自动返回
-execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
-
+execute @a[tag=!op,scores={menu_page=3}] ~~~ function inventory_menu/change_to_menu/change_to_menu1
 
 #粒子显示
 execute @s[scores={function_tick_20=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
