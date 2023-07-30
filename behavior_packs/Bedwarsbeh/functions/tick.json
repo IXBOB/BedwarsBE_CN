@@ -1,7 +1,6 @@
 {
     "values": [
       "on_join",
-      "assign_repeat_for_tickjson",
-      "RandomDamageUID"
+      "assign_repeat_for_tickjson"
     ]
 }

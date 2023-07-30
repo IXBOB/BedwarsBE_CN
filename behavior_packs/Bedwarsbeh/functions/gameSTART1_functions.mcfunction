@@ -162,3 +162,5 @@ execute @s[scores={"红陷阱等级"=1..3}] ~~~ function test_red_team_trap_trig
 execute @s[scores={"蓝陷阱等级"=1..3}] ~~~ function test_blue_team_trap_triggered
 execute @s[scores={"黄陷阱等级"=1..3}] ~~~ function test_yellow_team_trap_triggered
 execute @s[scores={"绿陷阱等级"=1..3}] ~~~ function test_green_team_trap_triggered
+#RandomDamageUID
+scoreboard players random @s RandomDamageUID 1 999999999

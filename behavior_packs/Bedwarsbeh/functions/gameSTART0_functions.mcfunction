@@ -109,6 +109,8 @@ gamemode 2 @a[tag=!insider]
 execute @s[scores={starting=1,"开始倒计时"=0..20,function_tick_20=20},tag=reset_OK] ~~~ function startgame_timer
 #开始倒计时-1
 scoreboard players add @s[scores={starting=1,"开始倒计时"=0..,function_tick_20=20},tag=reset_OK] "开始倒计时" -1
+#RandomDamageUID
+scoreboard players reset @s RandomDamageUID
 #重置结束后后复制游戏模式告示牌
 #复制大厅不可选择告示牌
 execute @s[scores={reseting=1,"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197

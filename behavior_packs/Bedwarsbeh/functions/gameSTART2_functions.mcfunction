@@ -33,6 +33,8 @@ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_
 function test_game_uid/test_game_uid
 #删除不合规物品
 function delete_non-compliant_item_and_entity
+#RandomDamageUID
+scoreboard players reset @s RandomDamageUID
 #重置结束后后复制游戏模式告示牌
 #复制大厅不可选择告示牌
 execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197
