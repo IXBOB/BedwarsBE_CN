@@ -751,6 +751,6 @@ text.tellraw.others.last_game_ended=§c§l您的上一局游戏已经结束。 �
 text.tellraw.others.level_up_line1=§6§l        ■■■■■ 升 级 ■■■■■
 text.tellraw.others.level_up_line2=§r§6祝贺 ！ 您的大厅等级已经达到了 %s 级 ！
 text.scoreboard.others.display=§e起床战争
-text.tellraw.others.unexpected_return_to_lobby=§c您意外地返回了大厅，您已退出本局游戏。如果您认为这是一个错误，请报告此问题。 请前往suo.nz/2RdCsB
+text.tellraw.others.unexpected_return_to_lobby=§c您意外地返回了大厅，已退出本局游戏。如果您认为这是一个错误，请报告此问题。 前往 suo.nz/2RdCsB 。该问题也可能是网络环境较差造成的， 网络环境较差时可能会导致无法进入游戏， 请检查您的网络连接。
 text.tellraw.others.enabled_dev_mode=§b§o已启用开发者模式
 text.tellraw.others.disabled_dev_mode=§b§o已禁用开发者模式

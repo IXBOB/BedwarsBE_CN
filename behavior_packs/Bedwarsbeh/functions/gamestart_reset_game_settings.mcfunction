@@ -286,5 +286,10 @@ scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] 
 scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=1}] "绿宝石等级" 1
 scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] "绿宝石等级" 3
 
+#事件开始初始化
+execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "显示" 120
+execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
+scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
+
 #starting -> 0
 scoreboard players set @s starting 0

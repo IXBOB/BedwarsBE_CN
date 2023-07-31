@@ -2,6 +2,8 @@
 effect @a[x=-218,y=193,z=-218,r=50] weakness 2 255 true
 #开始游戏后大厅玩家抗性提升
 effect @a[x=-218,y=193,z=-218,r=50] resistance 2 255 true
+#游戏开始玩家头顶显示血量
+scoreboard objectives setdisplay belowname health
 
 #游戏开始后还原被破坏的红队伍箱
 execute @s ~~~ detect 1 185 58 air 0 structure load bedwars:red_team_chest 1 185 58

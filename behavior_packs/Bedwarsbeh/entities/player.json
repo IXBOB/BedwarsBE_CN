@@ -381,6 +381,7 @@
         "run_command": {
           "command": [
             "tag @s add stop_command",
+            "execute @s[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={分队=1..4,出局观战=0}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a[tag=stop_command] remove stop_command",
             "execute @s[tag=!stop_command] ~~~ tag @s add set_self_fatal_damage_uid",
             "execute @s[tag=!stop_command] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",

@@ -5,13 +5,10 @@ tag @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] add unexpected_return_to_lo
 execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
 #设置near_diamond
 tag @a remove near_diamond
-execute @e[type=player,x=-40,y=186,z=-40,r=7] ~~~ tag @s add near_diamond
-execute @e[type=player,x=-40,y=186,z=40,r=7] ~~~ tag @s add near_diamond
-execute @e[type=player,x=40,y=186,z=40,r=7] ~~~ tag @s add near_diamond
-execute @e[type=player,x=40,y=186,z=-40,r=7] ~~~ tag @s add near_diamond
+execute @e[type=bedwars:diamond_point_revolve] ~~~ tag @a[r=7] add near_diamond
 #设置near_emerald
 tag @a remove near_emerald
-execute @e[type=player,x=0,y=185,z=0,r=10] ~~~ tag @s add near_emerald
+execute @e[type=bedwars:emerald_point_revolve] ~~~ tag @a[r=7] add near_emerald
 #复制计分板数值给玩家
 scoreboard players operation @a "钻石等级" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "钻石等级"
 scoreboard players operation @a "钻石time" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "钻石time"
@@ -30,11 +27,6 @@ execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ effect @s instant_health 1 255 true
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.invincibility_over"} ] }
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
-#检测装备升级
-execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_sword] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_pickaxe] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_axe] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_armor] ~~~ function weapon_upgrade
 #检测搭桥蛋
 execute @e[type=egg,x=-63,y=171,z=-63,dx=126,dy=44,dz=126] ~~~ function bridge_egg
 #检测胜利
@@ -48,8 +40,6 @@ function scoreboard_team_display/test/red_player_count
 function scoreboard_team_display/test/blue_player_count
 function scoreboard_team_display/test/yellow_player_count
 function scoreboard_team_display/test/green_player_count
-#游戏开始玩家头顶显示血量
-scoreboard objectives setdisplay belowname health
 #红床存在将红非挂机玩家存活设1
 execute @s[scores={"红床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=1}] "存活" 0
 execute @s[scores={"红床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=1}] "存活" 1
@@ -103,10 +93,6 @@ function ore_get
 execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出局观战"=0}] ~~~ function test_if_score_own_xp_changed_and_recount_xp
 execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players operation @s own_xp_cache = @s own_xp
 #事件系统相关================
-#事件开始初始化
-execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "显示" 120
-execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
-scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
 #事件倒计时-1
 scoreboard players add @s[scores={"显示事件"=1..8,function_tick_20=20}] "事件倒计时" -1
 #事件1
@@ -128,11 +114,9 @@ execute @s[scores={"显示事件"=8}] ~~~ function events/event_8
 #事件相关结束================
 #检测玩家是否中途退出再加入了下一局
 function test_game_uid/test_game_uid
-#删除不合规物品
+#删除不合规物品和实体
 function delete_non-compliant_item_and_entity
-#给掉入虚空的玩家添加kill tag
-execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
-#删除掉入虚空的玩家
+#杀死掉入虚空的玩家
 execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
 #复制告示牌游戏已开始
 execute @s[scores={function_tick_20=20}] ~~~ structure load bedwars:lobby_click_watch_sign -200 200 -204

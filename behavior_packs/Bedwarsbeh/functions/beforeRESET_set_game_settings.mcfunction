@@ -109,8 +109,6 @@ scoreboard players reset * "无敌时间"
 scoreboard players reset * "抬头返回time"
 #reset击杀数
 scoreboard players reset * "击杀数"
-#显示事件 -> 0
-scoreboard players set @e[type=armor_stand,name=main] "显示事件" 0
 
 #--------------------------其它--------------------------
 #设置冒险模式
