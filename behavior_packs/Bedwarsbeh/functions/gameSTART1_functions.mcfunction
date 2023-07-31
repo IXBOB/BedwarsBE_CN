@@ -133,6 +133,7 @@ execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 setblock -200 2
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -203 200 -197
 #重置结束后后复制游戏模式告示牌
 #复制大厅不可选择告示牌
 execute @s[scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197

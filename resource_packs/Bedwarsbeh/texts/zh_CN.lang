@@ -266,6 +266,7 @@ text.tellraw.waitinfo.change_map_success_0=§e游戏地图已更改为 §f随机
 text.tellraw.waitinfo.change_map_success_1=§e游戏地图已更改为 §a木船
 text.tellraw.waitinfo.change_map_success_2=§e游戏地图已更改为 §6沙漠
 text.tellraw.waitinfo.change_map_success_3=§e游戏地图已更改为 §b深海
+text.tellraw.waitinfo.change_map_success_3=§e游戏地图已更改为 §2雨林之屋
 text.tellraw.waitinfo.change_map_denied=§c您无法更改地图，因为您没有OP标签。
 text.tellraw.waitinfo.back_to_lobby_wait_10=§e您将在 10 秒后返回大厅
 text.tellraw.waitinfo.back_to_lobby_wait_5=§e您将在 5 秒后返回大厅
@@ -724,6 +725,10 @@ text.sign.lobby.map_3_line1=§f§l地图
 text.sign.lobby.map_3_line2=§r§b深海
 text.sign.lobby.map_3_line3=§r
 text.sign.lobby.map_3_line4=§r§7>点击按钮更改<
+text.sign.lobby.map_4_line1=§f§l地图
+text.sign.lobby.map_4_line2=§r§2雨林之屋
+text.sign.lobby.map_4_line3=§r
+text.sign.lobby.map_4_line4=§r§7>点击按钮更改<
 text.sign.lobby.map_1_locked_line1=§f§l地图
 text.sign.lobby.map_1_locked_line2=§r§a木船
 text.sign.lobby.map_1_locked_line3=§r§c仅可在
@@ -736,6 +741,10 @@ text.sign.lobby.map_3_locked_line1=§f§l地图
 text.sign.lobby.map_3_locked_line2=§r§b深海
 text.sign.lobby.map_3_locked_line3=§c仅可在
 text.sign.lobby.map_3_locked_line4=§c游戏重置前修改
+text.sign.lobby.map_4_locked_line1=§f§l地图
+text.sign.lobby.map_4_locked_line2=§r§2雨林之屋
+text.sign.lobby.map_4_locked_line3=§c仅可在
+text.sign.lobby.map_4_locked_line4=§c游戏重置前修改
 
 ##others
 

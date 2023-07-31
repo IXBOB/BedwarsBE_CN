@@ -242,16 +242,19 @@ scoreboard players set @e[type=armor_stand,name=spawn.diamond_1] spawned_diam_1 
 scoreboard players set @e[type=armor_stand,name=spawn.diamond_2] spawned_diam_2 0
 scoreboard players set @e[type=armor_stand,name=spawn.diamond_3] spawned_diam_3 0
 scoreboard players set @e[type=armor_stand,name=spawn.diamond_4] spawned_diam_4 0
-#emerald_count -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count 0
-#spawned_emerald -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emerald 0
+#emerald_count_1 -> 0
+#emerald_count_2 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_1 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_2 0
+#spawned_emer_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_1 0
 #钻岛和中岛revovle实体自动检测绑定tag
 execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_1
 execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_2
 execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_3
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_4
-execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point_1
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20,tag=!emerald_point_1] add emerald_point_2
 #删除附魔锋利tag
 tag @a remove have_upgraded_sword_sharpness_i
 tag @a remove have_upgraded_sword_sharpness_ii
@@ -270,6 +273,7 @@ scoreboard players set text.scoreboard.ingameinfo.blank_2 "显示" 0
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_1 "显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_2 "显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_3 "显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=4}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_4 "显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1 "显示" -1
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2 "显示" -1
 function scoreboard_team_display/test_bed_exist_and_set

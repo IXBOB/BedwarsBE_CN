@@ -175,7 +175,7 @@
                 ]
               },
               "event": "bedwars:damaged_player_player",
-              "target": "self"
+              "target": "other"
             }
           },
           { //实现弓箭射中玩家产生声音提示的效果
