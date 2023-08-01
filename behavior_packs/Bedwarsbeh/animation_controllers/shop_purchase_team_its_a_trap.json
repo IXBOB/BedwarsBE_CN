@@ -1,12 +1,12 @@
 {
   "format_version": "1.17.30",
     "animation_controllers": {
-      "controller.animation.command.shop_purchase_upgrade_team_trap": {
+      "controller.animation.command.shop_purchase_team_counter-offensive": {
         "initial_state": "run_timer",
         "states": {
           "run_timer": {
             "animations": [
-              "shop_purchase_upgrade_team_trap"
+              "shop_purchase_team_counter-offensive"
            ]
          }
         }
