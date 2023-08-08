@@ -22,4 +22,8 @@ scoreboard players set @a[tag=!registered] select_particle 0
 scoreboard players set @a[tag=!registered] respawning 0
 scoreboard players random @a[tag=!registered] uid 0 999999999
 gamemode 2 @a[tag=!registered]
+
+#init own_paricle
+scoreboard players set @a[tag=!registered] own_particle_1 0
+
 tag @a[tag=!registered] add registered
