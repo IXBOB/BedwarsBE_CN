@@ -55,6 +55,19 @@
 /structure load bedwars:map4_yellow_team_home 412 0 -20
 /structure load bedwars:map4_green_team_home 316 0 -20
 
+
+
+
+
+
+/scoreboard objectives add own_particle_1 dummy
+
+
+
+
+
+
+
 ATTENTION:
 
 1.add tag creator_info相关功能
