@@ -1,0 +1,13 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:map_sea_lantern_block"
+		},
+
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:light_emission": 15
+		}
+	}
+}

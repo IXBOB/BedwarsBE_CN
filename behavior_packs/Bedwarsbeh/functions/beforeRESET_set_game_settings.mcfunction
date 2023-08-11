@@ -37,14 +37,14 @@ scoreboard players set @e[type=armor_stand,name=main] "蓝铁time" 2
 scoreboard players set @e[type=armor_stand,name=main] "黄铁time" 2
 #绿铁time -> 2
 scoreboard players set @e[type=armor_stand,name=main] "绿铁time" 2
-#红家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "红家金time" 8
-#蓝家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "蓝家金time" 8
-#黄家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "黄家金time" 8
-#绿家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "绿家金time" 8
+#red_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] red_gold_time 8
+#blue_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] blue_gold_time 8
+#yellow_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] yellow_gold_time 8
+#green_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] green_gold_time 8
 #reset§c红队
 scoreboard players reset * "§c红队"
 #reset§b蓝队
@@ -65,6 +65,11 @@ scoreboard players reset * "镐等级"
 scoreboard players reset * "斧等级"
 #reset护甲等级
 scoreboard players reset * "护甲等级"
+#reset急迫等级
+scoreboard players reset * "红急迫等级"
+scoreboard players reset * "蓝急迫等级"
+scoreboard players reset * "黄急迫等级"
+scoreboard players reset * "绿急迫等级"
 #reset保护等级
 scoreboard players reset * "红保护等级"
 scoreboard players reset * "蓝保护等级"
@@ -75,24 +80,29 @@ scoreboard players reset * "红锋利等级"
 scoreboard players reset * "蓝锋利等级"
 scoreboard players reset * "黄锋利等级"
 scoreboard players reset * "绿锋利等级"
-#陷阱个数 -> 0
-scoreboard players set @s red_trap_sum 0
-scoreboard players set @s blue_trap_sum 0
-scoreboard players set @s yellow_trap_sum 0
-scoreboard players set @s green_trap_sum 0
-#各陷阱槽位ID -> 0
-scoreboard players set @s red_trap_1_id 0
-scoreboard players set @s blue_trap_1_id 0
-scoreboard players set @s yellow_trap_1_id 0
-scoreboard players set @s green_trap_1_id 0
-scoreboard players set @s red_trap_2_id 0
-scoreboard players set @s blue_trap_2_id 0
-scoreboard players set @s yellow_trap_2_id 0
-scoreboard players set @s green_trap_2_id 0
-scoreboard players set @s red_trap_3_id 0
-scoreboard players set @s blue_trap_3_id 0
-scoreboard players set @s yellow_trap_3_id 0
-scoreboard players set @s green_trap_3_id 0
+#reset锻炉等级
+scoreboard players reset * "红锻炉等级"
+scoreboard players reset * "蓝锻炉等级"
+scoreboard players reset * "黄锻炉等级"
+scoreboard players reset * "绿锻炉等级"
+#reset陷阱个数
+scoreboard players reset * red_trap_sum
+scoreboard players reset * blue_trap_sum
+scoreboard players reset * yellow_trap_sum
+scoreboard players reset * green_trap_sum
+#reset各陷阱槽位ID
+scoreboard players reset * red_trap_1_id
+scoreboard players reset * blue_trap_1_id
+scoreboard players reset * yellow_trap_1_id
+scoreboard players reset * green_trap_1_id
+scoreboard players reset * red_trap_2_id
+scoreboard players reset * blue_trap_2_id
+scoreboard players reset * yellow_trap_2_id
+scoreboard players reset * green_trap_2_id
+scoreboard players reset * red_trap_3_id
+scoreboard players reset * blue_trap_3_id
+scoreboard players reset * yellow_trap_3_id
+scoreboard players reset * green_trap_3_id
 
 #reset firework
 scoreboard players reset * firework

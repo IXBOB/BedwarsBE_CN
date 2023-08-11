@@ -60,24 +60,44 @@ scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
 kill @e[type=xp_orb]
 #删除僵尸猪人
 event entity @e[type=minecraft:zombie_pigman] bedwars:remove_self
-#reset剑等级
-scoreboard players reset * "剑等级"
-#reset镐等级
-scoreboard players reset * "镐等级"
-#reset斧等级
-scoreboard players reset * "斧等级"
-#reset护甲等级
-scoreboard players reset * "护甲等级"
-#reset保护等级
-scoreboard players reset * "红保护等级"
-scoreboard players reset * "蓝保护等级"
-scoreboard players reset * "黄保护等级"
-scoreboard players reset * "绿保护等级"
-#reset锋利等级
-scoreboard players reset * "红锋利等级"
-scoreboard players reset * "蓝锋利等级"
-scoreboard players reset * "黄锋利等级"
-scoreboard players reset * "绿锋利等级"
+#急迫等级 -> 0
+scoreboard players set @s "红急迫等级" 0
+scoreboard players set @s "蓝急迫等级" 0
+scoreboard players set @s "黄急迫等级" 0
+scoreboard players set @s "绿急迫等级" 0
+#保护等级 -> 0
+scoreboard players set @s "红保护等级" 0
+scoreboard players set @s "蓝保护等级" 0
+scoreboard players set @s "黄保护等级" 0
+scoreboard players set @s "绿保护等级" 0
+#锋利等级 -> 0
+scoreboard players set @s "红锋利等级" 0
+scoreboard players set @s "蓝锋利等级" 0
+scoreboard players set @s "黄锋利等级" 0
+scoreboard players set @s "绿锋利等级" 0
+#锻炉等级 -> 0
+scoreboard players set @s "红锻炉等级" 0
+scoreboard players set @s "蓝锻炉等级" 0
+scoreboard players set @s "黄锻炉等级" 0
+scoreboard players set @s "绿锻炉等级" 0
+#陷阱个数 -> 0
+scoreboard players set @s red_trap_sum 0
+scoreboard players set @s blue_trap_sum 0
+scoreboard players set @s yellow_trap_sum 0
+scoreboard players set @s green_trap_sum 0
+#各陷阱槽位ID -> 0
+scoreboard players set @s red_trap_1_id 0
+scoreboard players set @s blue_trap_1_id 0
+scoreboard players set @s yellow_trap_1_id 0
+scoreboard players set @s green_trap_1_id 0
+scoreboard players set @s red_trap_2_id 0
+scoreboard players set @s blue_trap_2_id 0
+scoreboard players set @s yellow_trap_2_id 0
+scoreboard players set @s green_trap_2_id 0
+scoreboard players set @s red_trap_3_id 0
+scoreboard players set @s blue_trap_3_id 0
+scoreboard players set @s yellow_trap_3_id 0
+scoreboard players set @s green_trap_3_id 0
 #瞬间恢复
 effect @a[scores={"分队"=1..4}] instant_health 2 255 true
 #tag - degrade
@@ -241,7 +261,9 @@ scoreboard players set @e[type=armor_stand,name=spawn.diamond_4] spawned_diam_4 
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_1 0
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_2 0
 #spawned_emer_1 -> 0
+#spawned_emer_2 -> 0
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_1 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_2 0
 #钻岛和中岛revovle实体自动检测绑定tag
 execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_1
 execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_2
@@ -251,8 +273,6 @@ execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emer
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20,tag=!emerald_point_1] add emerald_point_2
 #删除附魔锋利tag
 tag @a remove have_upgraded_sword_sharpness_i
-tag @a remove have_upgraded_sword_sharpness_ii
-tag @a remove have_upgraded_sword_sharpness_iii
 #清空当局经验和当局金币
 scoreboard players set @a "当局经验" 0
 scoreboard players set @a "当局硬币" 0

@@ -180,6 +180,39 @@
 		},
 		"sound": "wood"
 	},
+	"bedwars:get_trap_info_block": {
+		"textures": {
+			"up": "get_trap_info_block_up",
+			"down": "get_trap_info_block_down",
+			"north": "get_trap_info_block_north",
+			"south": "get_trap_info_block_south",
+			"west": "get_trap_info_block_west",
+			"east": "get_trap_info_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:purchase_team_miner_fatigue_trap_block": {
+		"textures": {
+			"up": "purchase_team_miner_fatigue_trap_block_up",
+			"down": "purchase_team_miner_fatigue_trap_block_down",
+			"north": "purchase_team_miner_fatigue_trap_block_north",
+			"south": "purchase_team_miner_fatigue_trap_block_south",
+			"west": "purchase_team_miner_fatigue_trap_block_west",
+			"east": "purchase_team_miner_fatigue_trap_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:purchase_team_alarm_trap_block": {
+		"textures": {
+			"up": "purchase_team_alarm_trap_block_up",
+			"down": "purchase_team_alarm_trap_block_down",
+			"north": "purchase_team_alarm_trap_block_north",
+			"south": "purchase_team_alarm_trap_block_south",
+			"west": "purchase_team_alarm_trap_block_west",
+			"east": "purchase_team_alarm_trap_block_east"
+		},
+		"sound": "wood"
+	},
 	"bedwars:purchase_team_its_a_trap_block": {
 		"textures": {
 			"up": "purchase_team_its_a_trap_block_up",
@@ -202,14 +235,14 @@
 		},
 		"sound": "wood"
 	},
-	"bedwars:purchase_team_alarm_trap_block": {
+	"bedwars:purchase_upgrade_team_maniac_miner_block": {
 		"textures": {
-			"up": "purchase_team_alarm_trap_block_up",
-			"down": "purchase_team_alarm_trap_block_down",
-			"north": "purchase_team_alarm_trap_block_north",
-			"south": "purchase_team_alarm_trap_block_south",
-			"west": "purchase_team_alarm_trap_block_west",
-			"east": "purchase_team_alarm_trap_block_east"
+			"up": "purchase_upgrade_team_maniac_miner_block_up",
+			"down": "purchase_upgrade_team_maniac_miner_block_down",
+			"north": "purchase_upgrade_team_maniac_miner_block_north",
+			"south": "purchase_upgrade_team_maniac_miner_block_south",
+			"west": "purchase_upgrade_team_maniac_miner_block_west",
+			"east": "purchase_upgrade_team_maniac_miner_block_east"
 		},
 		"sound": "wood"
 	},
@@ -232,6 +265,17 @@
 			"south": "purchase_upgrade_team_protection_block_south",
 			"west": "purchase_upgrade_team_protection_block_west",
 			"east": "purchase_upgrade_team_protection_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:purchase_upgrade_team_forge_block": {
+		"textures": {
+			"up": "purchase_upgrade_team_forge_block_up",
+			"down": "purchase_upgrade_team_forge_block_down",
+			"north": "purchase_upgrade_team_forge_block_north",
+			"south": "purchase_upgrade_team_forge_block_south",
+			"west": "purchase_upgrade_team_forge_block_west",
+			"east": "purchase_upgrade_team_forge_block_east"
 		},
 		"sound": "wood"
 	},
@@ -408,6 +452,50 @@
 			"south": "map_emerald_block_south",
 			"west": "map_emerald_block_west",
 			"east": "map_emerald_block_east"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_red_wool_block": {
+		"textures": {
+			"up": "map_red_wool",
+			"down": "map_red_wool",
+			"north": "map_red_wool",
+			"south": "map_red_wool",
+			"west": "map_red_wool",
+			"east": "map_red_wool"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_light_blue_wool_block": {
+		"textures": {
+			"up": "map_light_blue_wool",
+			"down": "map_light_blue_wool",
+			"north": "map_light_blue_wool",
+			"south": "map_light_blue_wool",
+			"west": "map_light_blue_wool",
+			"east": "map_light_blue_wool"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_yellow_wool_block": {
+		"textures": {
+			"up": "map_yellow_wool",
+			"down": "map_yellow_wool",
+			"north": "map_yellow_wool",
+			"south": "map_yellow_wool",
+			"west": "map_yellow_wool",
+			"east": "map_yellow_wool"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_green_wool_block": {
+		"textures": {
+			"up": "map_green_wool",
+			"down": "map_green_wool",
+			"north": "map_green_wool",
+			"south": "map_green_wool",
+			"west": "map_green_wool",
+			"east": "map_green_wool"
 		},
 		"sound": "stone"
 	},
@@ -730,6 +818,17 @@
 		},
 		"sound": "stone"
 	},
+	"bedwars:map_dark_oak_log_block": {
+		"textures": {
+			"up": "map_dark_oak_log_block_top",
+			"down": "map_dark_oak_log_block_top",
+			"north": "map_dark_oak_log_block_side",
+			"south": "map_dark_oak_log_block_side",
+			"west": "map_dark_oak_log_block_side",
+			"east": "map_dark_oak_log_block_side"
+		},
+		"sound": "stone"
+	},
 	"bedwars:map_jungle_log_block": {
 		"textures": {
 			"up": "map_jungle_log_block_top",
@@ -749,6 +848,28 @@
 			"south": "map_light_blue_concrete_block",
 			"west": "map_light_blue_concrete_block",
 			"east": "map_light_blue_concrete_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_light_gray_concrete_block": {
+		"textures": {
+			"up": "map_light_gray_concrete_block",
+			"down": "map_light_gray_concrete_block",
+			"north": "map_light_gray_concrete_block",
+			"south": "map_light_gray_concrete_block",
+			"west": "map_light_gray_concrete_block",
+			"east": "map_light_gray_concrete_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_gray_concrete_block": {
+		"textures": {
+			"up": "map_gray_concrete_block",
+			"down": "map_gray_concrete_block",
+			"north": "map_gray_concrete_block",
+			"south": "map_gray_concrete_block",
+			"west": "map_gray_concrete_block",
+			"east": "map_gray_concrete_block"
 		},
 		"sound": "stone"
 	},
