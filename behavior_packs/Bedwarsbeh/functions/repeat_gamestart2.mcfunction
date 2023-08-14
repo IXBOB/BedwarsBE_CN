@@ -10,9 +10,6 @@ execute @a[scores={"分队"=3,respawning=0}] ~~~ detect ~ ~ ~ structure_void 0 t
 execute @a[scores={"分队"=4,respawning=0}] ~~~ detect ~ ~ ~ structure_void 0 tp @s -53 186 0 facing 0 182 0
 #重生中的玩家设置respawning 0
 execute @a[scores={"分队"=1..4,respawning=1}] ~~~ scoreboard players set @s respawning 0
-#gamestart=2,复制告示牌游戏未开始
-structure load bedwars:lobby_wait_start_sign -200 200 -204
-setblock -200 201 -205 air
 #玩家隐身
 execute @e[type=armor_stand,name=main,scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={invisible_time=1..}] ~~~ function invisible_time
 #大厅actionbar
@@ -21,7 +18,7 @@ execute @a[x=-218,y=193,z=-218,r=50] ~~~ function lobby_actionbar
 execute @s[scores={function_tick_20=10}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 execute @s[scores={function_tick_20=20}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 #更改游戏模式
-gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
+gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider,m=!2]
 #删除背包
 clear @a[scores={"出局观战"=1,respawning=0}]
 #设置重生点
@@ -37,5 +34,5 @@ function delete_non-compliant_item_and_entity
 scoreboard players reset @s RandomDamageUID
 #重置结束后后复制游戏模式告示牌
 #复制大厅不可选择告示牌
-execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197
-execute @s[tag=reset_OK,scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -197
+execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -206
+execute @s[tag=reset_OK,scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -206

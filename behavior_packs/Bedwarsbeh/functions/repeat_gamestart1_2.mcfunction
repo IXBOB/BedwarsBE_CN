@@ -1,22 +1,8 @@
-#开始游戏后大厅玩家虚弱
-effect @a[x=-218,y=193,z=-218,r=50] weakness 2 255 true
 #开始游戏后大厅玩家抗性提升
-effect @a[x=-218,y=193,z=-218,r=50] resistance 2 255 true
+execute @a[scores={in_lobby=1}] ~~~ function give_effect/gamestart1_2_lobby_effect
 #游戏开始玩家头顶显示血量
 scoreboard objectives setdisplay belowname health
 
-#游戏开始后还原被破坏的红队伍箱
-execute @s ~~~ detect 1 185 58 air 0 structure load bedwars:red_team_chest 1 185 58
-execute @s ~~~ detect -1 185 58 air 0 structure load bedwars:red_team_enderchest -1 185 58
-#游戏开始后还原被破坏的蓝队伍箱
-execute @s ~~~ detect -1 185 -58 air 0 structure load bedwars:blue_team_chest -1 185 -58
-execute @s ~~~ detect 1 185 -58 air 0 structure load bedwars:blue_team_enderchest 1 185 -58
-#游戏开始后还原被破坏的黄队伍箱
-execute @s ~~~ detect 58 185 -1 air 0 structure load bedwars:yellow_team_chest 58 185 -1
-execute @s ~~~ detect 58 185 1 air 0 structure load bedwars:yellow_team_enderchest 58 185 1
-#游戏开始后还原被破坏的绿队伍箱
-execute @s ~~~ detect -58 185 1 air 0 structure load bedwars:green_team_chest -58 185 1
-execute @s ~~~ detect -58 185 -1 air 0 structure load bedwars:green_team_enderchest -58 185 -1
 #检测有人正在重生执行相关指令
 execute @e[type=player,scores={respawning=1},x=0,y=200,z=0,c=1] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main
 #游戏中拒绝使用function console指令调整人数
@@ -35,7 +21,5 @@ tag @a remove set.start.players.5
 tag @a remove set.start.players.6
 tag @a remove set.start.players.7
 tag @a remove set.start.players.8
-#重复复制队伍商店告示牌
-execute @s[scores={function_tick_20=20}] ~~~ function ingame_structure_loop_replace
 #给予玩家药水效果(mode=2开局急迫，队伍疯狂矿工的急迫效果)
 function give_effect/assign

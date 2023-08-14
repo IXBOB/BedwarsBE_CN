@@ -17,11 +17,7 @@ scoreboard players set @s xp_cache 0
 scoreboard players set @s still_need_xp 0
 scoreboard players set @s health 20
 scoreboard players set @s able_to_respawn 0
-<<<<<<< HEAD
 function inventory_menu/change_to_menu/change_to_menu1
-=======
-execute @s ~~~ function inventory_menu/change_to_menu/change_to_menu1
->>>>>>> 12c486db123cdad39b8b82cd5bd870faa39a9a6c
 scoreboard players set @s select_particle 0
 scoreboard players set @s respawning 0
 scoreboard players random @s uid 0 999999999
