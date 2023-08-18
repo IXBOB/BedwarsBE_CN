@@ -1,0 +1,50 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:map_iron_block"
+		},
+
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_step_on": {
+				"event": "bedwars:on_step_on_iron_block",
+				"target": "self"
+			},
+			"minecraft:on_step_off":{
+				"event" : "bedwars:on_step_off_iron_block",
+				"target": "self"
+			}
+		},
+		"events": {
+			"bedwars:on_step_on_iron_block": {
+				"run_command": {
+					"command": [
+
+						"tag @s[scores={分队=1..4,出局观战=0}] add on_step_on_iron_block",
+						"tag @s[tag=on_step_on_iron_block] add on_iron_block",
+						"execute @e[type=bedwars:iron_point_red_invisible,tag=iron_point_red,r=2] ~~~ tag @a[tag=on_iron_block,r=2] add on_iron_block_red",
+						"execute @e[type=bedwars:iron_point_blue_invisible,tag=iron_point_blue,r=2] ~~~ tag @a[tag=on_iron_block,r=2] add on_iron_block_blue",
+						"execute @e[type=bedwars:iron_point_yellow_invisible,tag=iron_point_yellow,r=2] ~~~ tag @a[tag=on_iron_block,r=2] add on_iron_block_yellow",
+						"execute @e[type=bedwars:iron_point_green_invisible,tag=iron_point_green,r=2] ~~~ tag @a[tag=on_iron_block,r=2] add on_iron_block_green",
+						"function ore_get/iron_and_gold/assign",
+						"tag @s remove on_step_on_iron_block"
+					],
+					"target": "player"
+				}
+			},
+			"bedwars:on_step_off_iron_block": {
+				"run_command": {
+					"command": [
+						"tag @s remove on_iron_block",
+						"tag @s remove on_iron_block_red",
+						"tag @s remove on_iron_block_blue",
+						"tag @s remove on_iron_block_yellow",
+						"tag @s remove on_iron_block_green"
+					],
+					"target": "player"
+				}
+			}
+		}
+	}
+}

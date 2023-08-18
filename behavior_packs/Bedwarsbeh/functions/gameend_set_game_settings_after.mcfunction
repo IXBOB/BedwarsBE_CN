@@ -66,21 +66,28 @@ scoreboard players set @e[type=armor_stand,name=main] "商已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "牌已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "实已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "箱已重置" 0
-#删除隐身时间
-scoreboard objectives remove invisible_time
-scoreboard objectives add invisible_time dummy
+#invisible_time -> 0
+scoreboard players set @a invisible_time 0
+#清空玩家末影箱
+execute @a ~~~ function clear_enderchest
 #删除资源点旋转的实体
 execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
 execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
 execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ execute @e[type=bedwars:emerald_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
-#清空玩家末影箱
-execute @a ~~~ function clear_enderchest
+#删除基地资源点隐藏的实体
+execute @e[type=armor_stand,name=spawn.red_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_red_invisible,r=20] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.blue_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_blue_invisible,r=20] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.yellow_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_yellow_invisible,r=20] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.green_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_green_invisible,r=20] ~~~ event entity @s bedwars:remove_self
 #删除队伍实体
 event entity @e[type=bedwars:base_entity_red] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_blue] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_yellow] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_green] bedwars:remove_self
-
-
+#删除dropped_item
+event entity @e[type=bedwars:dropped_iron_ingot] bedwars:remove_self
+event entity @e[type=bedwars:dropped_gold_ingot] bedwars:remove_self
+event entity @e[type=bedwars:dropped_diamond] bedwars:remove_self
+event entity @e[type=bedwars:dropped_emerald] bedwars:remove_self

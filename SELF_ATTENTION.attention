@@ -56,13 +56,14 @@
 /structure load bedwars:map4_green_team_home 316 0 -20
 
 
-
-
-
-
-/scoreboard objectives add own_particle_1 dummy
 更换跑酷终点的方块，使用on_step_on触发获得粒子效果事件（own_particle_1 -> 1 并播放tellraw和声音）
 
+
+
+
+ATTENTION:
+1. 画完 help 方块的材质
+2. 制作快速点击 help 方块显示第二页的功能
 
 
 
@@ -72,8 +73,6 @@ ATTENTION:
 
 1.add tag creator_info相关功能
    (更新地图时不要忘记更新creator_info.mcfunction中写的version)
-2.重做队伍升级(陷阱改掉,添加铁锻炉之类的功能)
-3.玩家背包菜单拿起物品检测使用animation molang
 
 
 
