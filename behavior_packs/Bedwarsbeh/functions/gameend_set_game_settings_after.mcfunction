@@ -1,5 +1,5 @@
 #TP
-execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tp @a -200 205 -200
+tp @a -200 205 -200
 #effect.clear
 effect @a clear
 #set menu_page 1
@@ -66,6 +66,7 @@ scoreboard players set @e[type=armor_stand,name=main] "商已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "牌已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "实已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "箱已重置" 0
+scoreboard players set @e[type=armor_stand,name=main] "等已重置" 0
 #invisible_time -> 0
 scoreboard players set @a invisible_time 0
 #清空玩家末影箱
@@ -87,7 +88,7 @@ event entity @e[type=bedwars:base_entity_blue] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_yellow] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_green] bedwars:remove_self
 #删除dropped_item
-event entity @e[type=bedwars:dropped_iron_ingot] bedwars:remove_self
-event entity @e[type=bedwars:dropped_gold_ingot] bedwars:remove_self
-event entity @e[type=bedwars:dropped_diamond] bedwars:remove_self
-event entity @e[type=bedwars:dropped_emerald] bedwars:remove_self
+event entity @e[type=bedwars:dropped_iron_ingot,tag=!in_guide] bedwars:remove_self
+event entity @e[type=bedwars:dropped_gold_ingot,tag=!in_guide] bedwars:remove_self
+event entity @e[type=bedwars:dropped_diamond,tag=!in_guide] bedwars:remove_self
+event entity @e[type=bedwars:dropped_emerald,tag=!in_guide] bedwars:remove_self

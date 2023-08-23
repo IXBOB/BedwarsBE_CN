@@ -152,6 +152,7 @@ item.bedwars:green_team_boots=Green leather boots
 
 ##LOBBY ITEMS
 
+item.bedwars:waiting_back_to_hub=§cBack to lobby §7(right click / press)
 item.bedwars:menu_pleasewait=§7§oPlease wait...
 item.bedwars:menu_back=§eBack
 item.bedwars:menu1_particle_item=§cSelect particles §7[click / move to select]
@@ -482,7 +483,7 @@ text.tellraw.ingameinfo.purchase_upgrade_sword=§aYou upgraded §r§6sword
 text.tellraw.ingameinfo.purchase_upgrade_pickaxe=§aYou upgraded §r§6pickaxe
 text.tellraw.ingameinfo.purchase_upgrade_axe=§aYou upgraded §r§6axe
 text.tellraw.ingameinfo.purchase_upgrade_armor=§aYou upgraded §r§6aromor
-text.tellraw.ingameinfo.purchase_bow=§aYou purchased §r§6Bow
+text.tellraw.ingameinfo.purchase_upgrade_bow=§aYou upgraded §r§6Bow
 text.tellraw.ingameinfo.purchase_arrow=§aYou purchased §r§6Arrow x8
 text.tellraw.ingameinfo.purchase_bridge_egg=§aYou purchased §r§6Bridge egg
 text.tellraw.ingameinfo.purchase_popup_tower=§aYou purchased §r§6Compact popup_tower
@@ -510,6 +511,10 @@ text.tellraw.ingameinfo.purchase_now_chainmail_armor=§7Your armor level is now 
 text.tellraw.ingameinfo.purchase_now_iron_armor=§7Your armor level is now 3 §f(iron)
 text.tellraw.ingameinfo.purchase_now_diamond_armor=§7Your armor level is now 4 §f(diamond)
 text.tellraw.ingameinfo.purchase_upgrade_armor_already_maxlevel=§cYour armor has reached the MAX level
+text.tellraw.ingameinfo.purchase_now_bow_1=§7Your bow level is now 1 §f(No enchantment effect)
+text.tellraw.ingameinfo.purchase_now_bow_2=§7Your bow level is now 2 §f(Punch I)
+text.tellraw.ingameinfo.purchase_now_bow_3=§7Your bow level is now 3 §f(Punch II)
+text.tellraw.ingameinfo.purchase_now_bow_4=§7Your bow level is now 4 §f(Punch II + Power I)
 text.tellraw.ingameinfo.purchase_upgrade_team_maniac_miner=§aYou upgraded the §dteam MANIAC MINER
 text.tellraw.ingameinfo.purchase_upgrade_team_protection=§aYou upgraded the §dteam PROTECTION
 text.tellraw.ingameinfo.purchase_upgrade_team_sharpness=§aYou upgraded the §dteam SHARPNESS
@@ -568,6 +573,7 @@ text.tellraw.ingameinfo.get_upgrade_help_page2_line13=§r   §7Level 3 : Gold In
 text.tellraw.ingameinfo.get_upgrade_help_page2_line14=§r   §7Level 4 : Gold Ingots are produced 300% faster.
 text.tellraw.ingameinfo.get_upgrade_help_page2_line15=§r
 text.tellraw.ingameinfo.respawn_sword_degrade=§cYour sword level has been reseted to 1
+text.tellraw.ingameinfo.respawn_bow_degrade=§cYour bow has been lost
 text.tellraw.ingameinfo.respawn_pickaxe_degrade=§cYour pickaxe level has been downgraded and is now level 
 text.tellraw.ingameinfo.respawn_axe_degrade=§cYour axe level has been downgraded and is now level 
 text.tellraw.ingameinfo.respawn_armor_degrade=§cYour armor level has been downgraded and is now level 
@@ -807,6 +813,10 @@ text.sign.lobby.map_4_locked_line1=§f§lMAP
 text.sign.lobby.map_4_locked_line2=§r§2Beach Cities
 text.sign.lobby.map_4_locked_line3=§cPlease change
 text.sign.lobby.map_4_locked_line4=§r§cbefore reset
+
+##WAITING
+text.tellraw.waiting.player_join= §6joined the start queue
+text.tellraw.waiting.player_leave= §cleft the start queue
 
 ##others
 
