@@ -1146,14 +1146,14 @@
         },
 		"sound": "wood"
 	},
-	"bedwars:map_black_terracotta_block": {
+	"bedwars:map_black_concrete_block": {
 		"textures": {
-			"up": "map_black_terracotta_block_up",
-			"down": "map_black_terracotta_block_down",
-			"north": "map_black_terracotta_block_north",
-			"south": "map_black_terracotta_block_south",
-			"west": "map_black_terracotta_block_west",
-			"east": "map_black_terracotta_block_east"
+			"up": "map_black_concrete_block_up",
+			"down": "map_black_concrete_block_down",
+			"north": "map_black_concrete_block_north",
+			"south": "map_black_concrete_block_south",
+			"west": "map_black_concrete_block_west",
+			"east": "map_black_concrete_block_east"
         },
 		"sound": "wood"
 	},
@@ -1256,17 +1256,6 @@
         },
 		"sound": "wood"
 	},
-	"bedwars:map_cyan_terracotta_block": {
-		"textures": {
-			"up": "map_cyan_terracotta_block_up",
-			"down": "map_cyan_terracotta_block_down",
-			"north": "map_cyan_terracotta_block_north",
-			"south": "map_cyan_terracotta_block_south",
-			"west": "map_cyan_terracotta_block_west",
-			"east": "map_cyan_terracotta_block_east"
-        },
-		"sound": "wood"
-	},
 	"bedwars:map_dark_oak_planks_block": {
 		"textures": {
 			"up": "map_dark_oak_planks_block_up",
@@ -1359,14 +1348,14 @@
 		"textures": "map_jungle_leaves_block",
 		"sound": "wood"
 	},
-	"bedwars:map_lime_terracotta_block": {
+	"bedwars:map_lime_concrete_block": {
 		"textures": {
-			"up": "map_lime_terracotta_block_up",
-			"down": "map_lime_terracotta_block_down",
-			"north": "map_lime_terracotta_block_north",
-			"south": "map_lime_terracotta_block_south",
-			"west": "map_lime_terracotta_block_west",
-			"east": "map_lime_terracotta_block_east"
+			"up": "map_lime_concrete_block_up",
+			"down": "map_lime_concrete_block_down",
+			"north": "map_lime_concrete_block_north",
+			"south": "map_lime_concrete_block_south",
+			"west": "map_lime_concrete_block_west",
+			"east": "map_lime_concrete_block_east"
         },
 		"sound": "wood"
 	},
@@ -1422,17 +1411,6 @@
 			"south": "map_red_sand_block_south",
 			"west": "map_red_sand_block_west",
 			"east": "map_red_sand_block_east"
-        },
-		"sound": "wood"
-	},
-	"bedwars:map_red_terracotta_block": {
-		"textures": {
-			"up": "map_red_terracotta_block_up",
-			"down": "map_red_terracotta_block_down",
-			"north": "map_red_terracotta_block_north",
-			"south": "map_red_terracotta_block_south",
-			"west": "map_red_terracotta_block_west",
-			"east": "map_red_terracotta_block_east"
         },
 		"sound": "wood"
 	},

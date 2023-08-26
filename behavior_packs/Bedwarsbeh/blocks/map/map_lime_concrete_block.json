@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:map_red_terracotta_block"
+			"identifier": "bedwars:map_lime_concrete_block"
 		},
 
 		"components": {
