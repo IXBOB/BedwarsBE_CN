@@ -13,11 +13,9 @@ class BWClient(clientApi.GetClientSystemCls()):
     def ListenEvent(self):
         self.ListenApiEvent = lambda eventName, callbackFunc: self.ListenForEvent(clientApi.GetEngineNamespace(), clientApi.GetEngineSystemName(), eventName, self, callbackFunc)
         self.ListenApiEvent('OnKeyPressInGame', self.ClientOnKeyPressInGame)
-        self.ListenForEvent(clientApi.GetEngineNamespace(),clientApi.GetEngineSystemName(),"UiInitFinished",self,self.MenuUI)
 
     def UnListenEvent(self):
         self.UnListenAllEvents()
-        self.UnListenForEvent(clientApi.GetEngineNamespace(),clientApi.GetEngineSystemName(),"UiInitFinished",self,self.MenuUI)
         
     def Destroy(self):
         self.UnListenEvent()
@@ -27,9 +25,3 @@ class BWClient(clientApi.GetClientSystemCls()):
         
     def ClientOnKeyPressInGame(self, args):
         self.NotifyToServer('ClientOnKeyPressInGame', args)
-        
-    def MenuUI(self):
-        clientApi.RegisterUI("BWSripts", "MenuUI", "BWScripts.uiScript.MenuUIScreenNode", "MenuUI.screen")
-        self.HCUI = clientApi.CreateUI("BWScripts", "MenuUI", {"isHud": 1})
-        if self.HCUI:
-            self.HCUI.init()
