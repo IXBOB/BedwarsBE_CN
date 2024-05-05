@@ -418,7 +418,7 @@
             "tag @s add damaged_player_player",
             "scoreboard players operation @s uid.cache = @s uid", // 受到伤害的玩家的uid.cache设为伤害玩家的uid，伤害玩家的uid.cache设为自己的uid
             "scoreboard players operation @a[tag=player_damaged] uid.cache = @s uid",
-            "say @a[tag=damaged_player_player] damaged @a[tag=player_damaged] (damaged_player_player component)", //<---- 较后执行，此时已经可以正确获取被伤害的玩家和伤害了玩家的玩家
+            // "say @a[tag=damaged_player_player] damaged @a[tag=player_damaged] (damaged_player_player component)", //<---- 较后执行，此时已经可以正确获取被伤害的玩家和伤害了玩家的玩家
             "tag @a remove player_damaged",
             "tag @a remove damaged_player_player"
           ]

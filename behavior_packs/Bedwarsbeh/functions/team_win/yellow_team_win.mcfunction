@@ -13,8 +13,8 @@ scoreboard players set text.scoreboard.ingameinfo.green_team_wiped_out "显示" 
 titleraw @a[scores={"分队"=!3}] title { "rawtext" : [{"translate":"text.title.ingameinfo.gameover"} ] }
 #删除副标题
 title @a subtitle §r
-#胜场数+1
-scoreboard players add @a[scores={"分队"=3}] "胜场数" 1
+#总胜利数+1
+scoreboard players add @a[scores={"分队"=3}] "总胜利数" 1
 #设置计分板显示其它队全部淘汰
 scoreboard players reset text.scoreboard.ingameinfo.red_team_left_1 "显示"
 scoreboard players reset text.scoreboard.ingameinfo.blue_team_left_1 "显示"

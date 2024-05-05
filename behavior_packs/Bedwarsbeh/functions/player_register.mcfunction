@@ -1,5 +1,5 @@
 scoreboard players set @s "总击杀数" 0
-scoreboard players set @s "胜场数" 0
+scoreboard players set @s "总胜利数" 0
 scoreboard players set @s "等级" 0
 scoreboard players set @s "等级经验" 0
 scoreboard players set @s "硬币数" 0
