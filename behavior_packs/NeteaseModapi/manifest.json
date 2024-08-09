@@ -1,1 +1,27 @@
-{"dependencies": [], "format_version": 1, "header": {"description": "Bedwars Modapi behavior pack by IXBOB", "name": "behavior_pack", "uuid": "26b9c041-867e-442b-b497-581afb2ee967", "version": [1, 3, 10019]}, "modules": [{"description": "Bedwars Modapi behavior pack by IXBOB", "type": "data", "uuid": "4db773e2-ad40-4390-afee-95de6ae819bc", "version": [1, 3, 10019]}]}
+{
+    "dependencies": [],
+    "format_version": 1,
+    "header": {
+        "description": "Bedwars Modapi behavior pack by IXBOB",
+        "name": "behavior_pack",
+        "uuid": "19fb550d-4e7d-46e9-a7a4-03bf01d3accf",
+        "version": [
+            1,
+            3,
+            10031
+        ],
+        "min_engine_version":[ 1, 18, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Bedwars Modapi behavior pack by IXBOB",
+            "type": "data",
+            "uuid": "2e5a5d8a-c89f-4fa3-8d50-203c2d22d71a",
+            "version": [
+                1,
+                3,
+                10031
+            ]
+        }
+    ]
+}

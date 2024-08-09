@@ -1,1 +1,26 @@
-{"format_version": 1, "header": {"description": "Bedwars Modapi resource pack by IXBOB", "name": "resource_pack", "uuid": "6c484250-db36-45ad-86c2-202ddfd2b2f6", "version": [1, 3, 10015]}, "modules": [{"description": "Bedwars Modapi resource pack by IXBOB", "type": "resources", "uuid": "b6913359-52ff-4cbb-932d-35f5643baf76", "version": [1, 3, 10015]}]}
+{
+    "format_version": 1,
+    "header": {
+        "description": "Bedwars Modapi resource pack by IXBOB",
+        "name": "resource_pack",
+        "uuid": "c1a06846-e80e-4a4f-a81a-0b83a55e503e",
+        "version": [
+            1,
+            3,
+            10027
+        ],
+        "min_engine_version":[ 1, 18, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Bedwars Modapi resource pack by IXBOB",
+            "type": "resources",
+            "uuid": "f1e9a4f2-e140-46bb-9c96-68f1f23011be",
+            "version": [
+                1,
+                3,
+                10027
+            ]
+        }
+    ]
+}
